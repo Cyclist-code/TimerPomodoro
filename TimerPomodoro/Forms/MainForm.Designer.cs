@@ -37,10 +37,22 @@ namespace TimerPomodoro
             this.StartButton = new MaterialSkin.Controls.MaterialButton();
             this.TimerLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SettingsTabPage = new System.Windows.Forms.TabPage();
+            this.ColorThemeGroupBox = new System.Windows.Forms.GroupBox();
+            this.OrangeRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.BlueRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.GreenRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.PurpleRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.ColorThemeLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ThemeGroupBox = new System.Windows.Forms.GroupBox();
+            this.DarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            this.ThemeLabel = new MaterialSkin.Controls.MaterialLabel();
             this.AboutTabPage = new System.Windows.Forms.TabPage();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
+            this.SettingsTabPage.SuspendLayout();
+            this.ColorThemeGroupBox.SuspendLayout();
+            this.ThemeGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // SideMenuTabControl
@@ -127,6 +139,8 @@ namespace TimerPomodoro
             // SettingsTabPage
             // 
             this.SettingsTabPage.BackColor = System.Drawing.Color.White;
+            this.SettingsTabPage.Controls.Add(this.ColorThemeGroupBox);
+            this.SettingsTabPage.Controls.Add(this.ThemeGroupBox);
             this.SettingsTabPage.ImageKey = "settings.png";
             this.SettingsTabPage.Location = new System.Drawing.Point(4, 39);
             this.SettingsTabPage.Name = "SettingsTabPage";
@@ -134,6 +148,133 @@ namespace TimerPomodoro
             this.SettingsTabPage.Size = new System.Drawing.Size(586, 340);
             this.SettingsTabPage.TabIndex = 1;
             this.SettingsTabPage.Text = "Settings";
+            // 
+            // ColorThemeGroupBox
+            // 
+            this.ColorThemeGroupBox.Controls.Add(this.OrangeRadioButton);
+            this.ColorThemeGroupBox.Controls.Add(this.BlueRadioButton);
+            this.ColorThemeGroupBox.Controls.Add(this.GreenRadioButton);
+            this.ColorThemeGroupBox.Controls.Add(this.PurpleRadioButton);
+            this.ColorThemeGroupBox.Controls.Add(this.ColorThemeLabel);
+            this.ColorThemeGroupBox.Location = new System.Drawing.Point(142, 10);
+            this.ColorThemeGroupBox.Name = "ColorThemeGroupBox";
+            this.ColorThemeGroupBox.Size = new System.Drawing.Size(323, 60);
+            this.ColorThemeGroupBox.TabIndex = 2;
+            this.ColorThemeGroupBox.TabStop = false;
+            // 
+            // OrangeRadioButton
+            // 
+            this.OrangeRadioButton.AutoSize = true;
+            this.OrangeRadioButton.Depth = 0;
+            this.OrangeRadioButton.Location = new System.Drawing.Point(225, 15);
+            this.OrangeRadioButton.Margin = new System.Windows.Forms.Padding(0);
+            this.OrangeRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.OrangeRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.OrangeRadioButton.Name = "OrangeRadioButton";
+            this.OrangeRadioButton.Ripple = true;
+            this.OrangeRadioButton.Size = new System.Drawing.Size(86, 37);
+            this.OrangeRadioButton.TabIndex = 5;
+            this.OrangeRadioButton.TabStop = true;
+            this.OrangeRadioButton.Text = "Orange";
+            this.OrangeRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // BlueRadioButton
+            // 
+            this.BlueRadioButton.AutoSize = true;
+            this.BlueRadioButton.Depth = 0;
+            this.BlueRadioButton.Location = new System.Drawing.Point(159, 15);
+            this.BlueRadioButton.Margin = new System.Windows.Forms.Padding(0);
+            this.BlueRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.BlueRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BlueRadioButton.Name = "BlueRadioButton";
+            this.BlueRadioButton.Ripple = true;
+            this.BlueRadioButton.Size = new System.Drawing.Size(66, 37);
+            this.BlueRadioButton.TabIndex = 4;
+            this.BlueRadioButton.TabStop = true;
+            this.BlueRadioButton.Text = "Blue";
+            this.BlueRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // GreenRadioButton
+            // 
+            this.GreenRadioButton.AutoSize = true;
+            this.GreenRadioButton.Depth = 0;
+            this.GreenRadioButton.Location = new System.Drawing.Point(83, 15);
+            this.GreenRadioButton.Margin = new System.Windows.Forms.Padding(0);
+            this.GreenRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.GreenRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GreenRadioButton.Name = "GreenRadioButton";
+            this.GreenRadioButton.Ripple = true;
+            this.GreenRadioButton.Size = new System.Drawing.Size(76, 37);
+            this.GreenRadioButton.TabIndex = 4;
+            this.GreenRadioButton.TabStop = true;
+            this.GreenRadioButton.Text = "Green";
+            this.GreenRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // PurpleRadioButton
+            // 
+            this.PurpleRadioButton.AutoSize = true;
+            this.PurpleRadioButton.Checked = true;
+            this.PurpleRadioButton.Depth = 0;
+            this.PurpleRadioButton.Location = new System.Drawing.Point(3, 15);
+            this.PurpleRadioButton.Margin = new System.Windows.Forms.Padding(0);
+            this.PurpleRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.PurpleRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.PurpleRadioButton.Name = "PurpleRadioButton";
+            this.PurpleRadioButton.Ripple = true;
+            this.PurpleRadioButton.Size = new System.Drawing.Size(80, 37);
+            this.PurpleRadioButton.TabIndex = 3;
+            this.PurpleRadioButton.TabStop = true;
+            this.PurpleRadioButton.Text = "Purple";
+            this.PurpleRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // ColorThemeLabel
+            // 
+            this.ColorThemeLabel.AutoSize = true;
+            this.ColorThemeLabel.Depth = 0;
+            this.ColorThemeLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ColorThemeLabel.Location = new System.Drawing.Point(8, -2);
+            this.ColorThemeLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ColorThemeLabel.Name = "ColorThemeLabel";
+            this.ColorThemeLabel.Size = new System.Drawing.Size(86, 19);
+            this.ColorThemeLabel.TabIndex = 1;
+            this.ColorThemeLabel.Text = "Color theme";
+            // 
+            // ThemeGroupBox
+            // 
+            this.ThemeGroupBox.Controls.Add(this.DarkThemeSwitch);
+            this.ThemeGroupBox.Controls.Add(this.ThemeLabel);
+            this.ThemeGroupBox.Location = new System.Drawing.Point(6, 10);
+            this.ThemeGroupBox.Name = "ThemeGroupBox";
+            this.ThemeGroupBox.Size = new System.Drawing.Size(130, 60);
+            this.ThemeGroupBox.TabIndex = 0;
+            this.ThemeGroupBox.TabStop = false;
+            // 
+            // DarkThemeSwitch
+            // 
+            this.DarkThemeSwitch.AutoSize = true;
+            this.DarkThemeSwitch.Depth = 0;
+            this.DarkThemeSwitch.Location = new System.Drawing.Point(11, 16);
+            this.DarkThemeSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.DarkThemeSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.DarkThemeSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DarkThemeSwitch.Name = "DarkThemeSwitch";
+            this.DarkThemeSwitch.Ripple = true;
+            this.DarkThemeSwitch.Size = new System.Drawing.Size(91, 37);
+            this.DarkThemeSwitch.TabIndex = 1;
+            this.DarkThemeSwitch.Text = "Dark";
+            this.DarkThemeSwitch.UseVisualStyleBackColor = true;
+            // 
+            // ThemeLabel
+            // 
+            this.ThemeLabel.AutoSize = true;
+            this.ThemeLabel.Depth = 0;
+            this.ThemeLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ThemeLabel.Location = new System.Drawing.Point(8, -2);
+            this.ThemeLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ThemeLabel.Name = "ThemeLabel";
+            this.ThemeLabel.Size = new System.Drawing.Size(50, 19);
+            this.ThemeLabel.TabIndex = 1;
+            this.ThemeLabel.Text = "Theme";
             // 
             // AboutTabPage
             // 
@@ -170,6 +311,11 @@ namespace TimerPomodoro
             this.SideMenuTabControl.ResumeLayout(false);
             this.HomeTabPage.ResumeLayout(false);
             this.HomeTabPage.PerformLayout();
+            this.SettingsTabPage.ResumeLayout(false);
+            this.ColorThemeGroupBox.ResumeLayout(false);
+            this.ColorThemeGroupBox.PerformLayout();
+            this.ThemeGroupBox.ResumeLayout(false);
+            this.ThemeGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -184,6 +330,15 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialLabel TimerLabel;
         private MaterialSkin.Controls.MaterialButton StartButton;
         private MaterialSkin.Controls.MaterialButton StopButton;
+        private System.Windows.Forms.GroupBox ThemeGroupBox;
+        private MaterialSkin.Controls.MaterialLabel ThemeLabel;
+        private MaterialSkin.Controls.MaterialSwitch DarkThemeSwitch;
+        private System.Windows.Forms.GroupBox ColorThemeGroupBox;
+        private MaterialSkin.Controls.MaterialLabel ColorThemeLabel;
+        private MaterialSkin.Controls.MaterialRadioButton BlueRadioButton;
+        private MaterialSkin.Controls.MaterialRadioButton GreenRadioButton;
+        private MaterialSkin.Controls.MaterialRadioButton PurpleRadioButton;
+        private MaterialSkin.Controls.MaterialRadioButton OrangeRadioButton;
     }
 }
 
