@@ -48,11 +48,26 @@ namespace TimerPomodoro
             this.ThemeLabel = new MaterialSkin.Controls.MaterialLabel();
             this.AboutTabPage = new System.Windows.Forms.TabPage();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
+            this.DesignTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.TimerSettingsTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.WorkMinutesLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.WorkNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.WorkMinutesGroupBox = new System.Windows.Forms.GroupBox();
+            this.WorkTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.RestMinutesGroupBox = new System.Windows.Forms.GroupBox();
+            this.RestTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.RestMinutesLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.RestNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
             this.ColorThemeGroupBox.SuspendLayout();
             this.ThemeGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WorkNumericUpDown)).BeginInit();
+            this.WorkMinutesGroupBox.SuspendLayout();
+            this.RestMinutesGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RestNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // SideMenuTabControl
@@ -139,6 +154,11 @@ namespace TimerPomodoro
             // SettingsTabPage
             // 
             this.SettingsTabPage.BackColor = System.Drawing.Color.White;
+            this.SettingsTabPage.Controls.Add(this.RestMinutesGroupBox);
+            this.SettingsTabPage.Controls.Add(this.WorkMinutesGroupBox);
+            this.SettingsTabPage.Controls.Add(this.TimerSettingsTitleLabel);
+            this.SettingsTabPage.Controls.Add(this.panel1);
+            this.SettingsTabPage.Controls.Add(this.DesignTitleLabel);
             this.SettingsTabPage.Controls.Add(this.ColorThemeGroupBox);
             this.SettingsTabPage.Controls.Add(this.ThemeGroupBox);
             this.SettingsTabPage.ImageKey = "settings.png";
@@ -156,7 +176,7 @@ namespace TimerPomodoro
             this.ColorThemeGroupBox.Controls.Add(this.GreenRadioButton);
             this.ColorThemeGroupBox.Controls.Add(this.PurpleRadioButton);
             this.ColorThemeGroupBox.Controls.Add(this.ColorThemeLabel);
-            this.ColorThemeGroupBox.Location = new System.Drawing.Point(142, 10);
+            this.ColorThemeGroupBox.Location = new System.Drawing.Point(142, 50);
             this.ColorThemeGroupBox.Name = "ColorThemeGroupBox";
             this.ColorThemeGroupBox.Size = new System.Drawing.Size(323, 60);
             this.ColorThemeGroupBox.TabIndex = 2;
@@ -235,15 +255,15 @@ namespace TimerPomodoro
             this.ColorThemeLabel.Location = new System.Drawing.Point(8, -2);
             this.ColorThemeLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.ColorThemeLabel.Name = "ColorThemeLabel";
-            this.ColorThemeLabel.Size = new System.Drawing.Size(86, 19);
+            this.ColorThemeLabel.Size = new System.Drawing.Size(97, 19);
             this.ColorThemeLabel.TabIndex = 1;
-            this.ColorThemeLabel.Text = "Color theme";
+            this.ColorThemeLabel.Text = "Color scheme";
             // 
             // ThemeGroupBox
             // 
             this.ThemeGroupBox.Controls.Add(this.DarkThemeSwitch);
             this.ThemeGroupBox.Controls.Add(this.ThemeLabel);
-            this.ThemeGroupBox.Location = new System.Drawing.Point(6, 10);
+            this.ThemeGroupBox.Location = new System.Drawing.Point(6, 50);
             this.ThemeGroupBox.Name = "ThemeGroupBox";
             this.ThemeGroupBox.Size = new System.Drawing.Size(130, 60);
             this.ThemeGroupBox.TabIndex = 0;
@@ -294,6 +314,161 @@ namespace TimerPomodoro
             this.SideMenuImageList.Images.SetKeyName(1, "info.png");
             this.SideMenuImageList.Images.SetKeyName(2, "settings.png");
             // 
+            // DesignTitleLabel
+            // 
+            this.DesignTitleLabel.AutoSize = true;
+            this.DesignTitleLabel.Depth = 0;
+            this.DesignTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.DesignTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.DesignTitleLabel.Location = new System.Drawing.Point(13, 13);
+            this.DesignTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DesignTitleLabel.Name = "DesignTitleLabel";
+            this.DesignTitleLabel.Size = new System.Drawing.Size(165, 24);
+            this.DesignTitleLabel.TabIndex = 3;
+            this.DesignTitleLabel.Text = "Application design";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(6, 120);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(525, 1);
+            this.panel1.TabIndex = 4;
+            // 
+            // TimerSettingsTitleLabel
+            // 
+            this.TimerSettingsTitleLabel.AutoSize = true;
+            this.TimerSettingsTitleLabel.Depth = 0;
+            this.TimerSettingsTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.TimerSettingsTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.TimerSettingsTitleLabel.Location = new System.Drawing.Point(13, 132);
+            this.TimerSettingsTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TimerSettingsTitleLabel.Name = "TimerSettingsTitleLabel";
+            this.TimerSettingsTitleLabel.Size = new System.Drawing.Size(130, 24);
+            this.TimerSettingsTitleLabel.TabIndex = 5;
+            this.TimerSettingsTitleLabel.Text = "Timer settings";
+            // 
+            // WorkMinutesLabel
+            // 
+            this.WorkMinutesLabel.AutoSize = true;
+            this.WorkMinutesLabel.Depth = 0;
+            this.WorkMinutesLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.WorkMinutesLabel.Location = new System.Drawing.Point(8, 28);
+            this.WorkMinutesLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.WorkMinutesLabel.Name = "WorkMinutesLabel";
+            this.WorkMinutesLabel.Size = new System.Drawing.Size(62, 19);
+            this.WorkMinutesLabel.TabIndex = 6;
+            this.WorkMinutesLabel.Text = "Minutes:";
+            // 
+            // WorkNumericUpDown
+            // 
+            this.WorkNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WorkNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.WorkNumericUpDown.Location = new System.Drawing.Point(76, 25);
+            this.WorkNumericUpDown.Maximum = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            this.WorkNumericUpDown.Minimum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            this.WorkNumericUpDown.Name = "WorkNumericUpDown";
+            this.WorkNumericUpDown.Size = new System.Drawing.Size(50, 22);
+            this.WorkNumericUpDown.TabIndex = 8;
+            this.WorkNumericUpDown.Value = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            // 
+            // WorkMinutesGroupBox
+            // 
+            this.WorkMinutesGroupBox.Controls.Add(this.WorkTitleLabel);
+            this.WorkMinutesGroupBox.Controls.Add(this.WorkMinutesLabel);
+            this.WorkMinutesGroupBox.Controls.Add(this.WorkNumericUpDown);
+            this.WorkMinutesGroupBox.Location = new System.Drawing.Point(6, 169);
+            this.WorkMinutesGroupBox.Name = "WorkMinutesGroupBox";
+            this.WorkMinutesGroupBox.Size = new System.Drawing.Size(140, 60);
+            this.WorkMinutesGroupBox.TabIndex = 2;
+            this.WorkMinutesGroupBox.TabStop = false;
+            // 
+            // WorkTitleLabel
+            // 
+            this.WorkTitleLabel.AutoSize = true;
+            this.WorkTitleLabel.Depth = 0;
+            this.WorkTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.WorkTitleLabel.Location = new System.Drawing.Point(8, -2);
+            this.WorkTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.WorkTitleLabel.Name = "WorkTitleLabel";
+            this.WorkTitleLabel.Size = new System.Drawing.Size(37, 19);
+            this.WorkTitleLabel.TabIndex = 1;
+            this.WorkTitleLabel.Text = "Work";
+            // 
+            // RestMinutesGroupBox
+            // 
+            this.RestMinutesGroupBox.Controls.Add(this.RestTitleLabel);
+            this.RestMinutesGroupBox.Controls.Add(this.RestMinutesLabel);
+            this.RestMinutesGroupBox.Controls.Add(this.RestNumericUpDown);
+            this.RestMinutesGroupBox.Location = new System.Drawing.Point(153, 169);
+            this.RestMinutesGroupBox.Name = "RestMinutesGroupBox";
+            this.RestMinutesGroupBox.Size = new System.Drawing.Size(140, 60);
+            this.RestMinutesGroupBox.TabIndex = 9;
+            this.RestMinutesGroupBox.TabStop = false;
+            // 
+            // RestTitleLabel
+            // 
+            this.RestTitleLabel.AutoSize = true;
+            this.RestTitleLabel.Depth = 0;
+            this.RestTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.RestTitleLabel.Location = new System.Drawing.Point(8, -2);
+            this.RestTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RestTitleLabel.Name = "RestTitleLabel";
+            this.RestTitleLabel.Size = new System.Drawing.Size(32, 19);
+            this.RestTitleLabel.TabIndex = 1;
+            this.RestTitleLabel.Text = "Rest";
+            // 
+            // RestMinutesLabel
+            // 
+            this.RestMinutesLabel.AutoSize = true;
+            this.RestMinutesLabel.Depth = 0;
+            this.RestMinutesLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.RestMinutesLabel.Location = new System.Drawing.Point(8, 28);
+            this.RestMinutesLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RestMinutesLabel.Name = "RestMinutesLabel";
+            this.RestMinutesLabel.Size = new System.Drawing.Size(62, 19);
+            this.RestMinutesLabel.TabIndex = 6;
+            this.RestMinutesLabel.Text = "Minutes:";
+            // 
+            // RestNumericUpDown
+            // 
+            this.RestNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RestNumericUpDown.Location = new System.Drawing.Point(76, 25);
+            this.RestNumericUpDown.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.RestNumericUpDown.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.RestNumericUpDown.Name = "RestNumericUpDown";
+            this.RestNumericUpDown.Size = new System.Drawing.Size(50, 22);
+            this.RestNumericUpDown.TabIndex = 8;
+            this.RestNumericUpDown.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,10 +487,17 @@ namespace TimerPomodoro
             this.HomeTabPage.ResumeLayout(false);
             this.HomeTabPage.PerformLayout();
             this.SettingsTabPage.ResumeLayout(false);
+            this.SettingsTabPage.PerformLayout();
             this.ColorThemeGroupBox.ResumeLayout(false);
             this.ColorThemeGroupBox.PerformLayout();
             this.ThemeGroupBox.ResumeLayout(false);
             this.ThemeGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WorkNumericUpDown)).EndInit();
+            this.WorkMinutesGroupBox.ResumeLayout(false);
+            this.WorkMinutesGroupBox.PerformLayout();
+            this.RestMinutesGroupBox.ResumeLayout(false);
+            this.RestMinutesGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RestNumericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -339,6 +521,17 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialRadioButton GreenRadioButton;
         private MaterialSkin.Controls.MaterialRadioButton PurpleRadioButton;
         private MaterialSkin.Controls.MaterialRadioButton OrangeRadioButton;
+        private MaterialSkin.Controls.MaterialLabel DesignTitleLabel;
+        private System.Windows.Forms.Panel panel1;
+        private MaterialSkin.Controls.MaterialLabel TimerSettingsTitleLabel;
+        private MaterialSkin.Controls.MaterialLabel WorkMinutesLabel;
+        private System.Windows.Forms.NumericUpDown WorkNumericUpDown;
+        private System.Windows.Forms.GroupBox WorkMinutesGroupBox;
+        private MaterialSkin.Controls.MaterialLabel WorkTitleLabel;
+        private System.Windows.Forms.GroupBox RestMinutesGroupBox;
+        private MaterialSkin.Controls.MaterialLabel RestTitleLabel;
+        private MaterialSkin.Controls.MaterialLabel RestMinutesLabel;
+        private System.Windows.Forms.NumericUpDown RestNumericUpDown;
     }
 }
 
