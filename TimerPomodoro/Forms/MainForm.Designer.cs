@@ -505,6 +505,7 @@ namespace TimerPomodoro
             this.EmailDeveloperButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.EmailDeveloperButton.UseAccentColor = false;
             this.EmailDeveloperButton.UseVisualStyleBackColor = true;
+            this.EmailDeveloperButton.Click += new System.EventHandler(this.ButtonClickHandler);
             // 
             // DocumentationButton
             // 
@@ -524,6 +525,7 @@ namespace TimerPomodoro
             this.DocumentationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.DocumentationButton.UseAccentColor = false;
             this.DocumentationButton.UseVisualStyleBackColor = true;
+            this.DocumentationButton.Click += new System.EventHandler(this.ButtonClickHandler);
             // 
             // GitHubProfileButton
             // 
@@ -543,6 +545,7 @@ namespace TimerPomodoro
             this.GitHubProfileButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.GitHubProfileButton.UseAccentColor = false;
             this.GitHubProfileButton.UseVisualStyleBackColor = true;
+            this.GitHubProfileButton.Click += new System.EventHandler(this.ButtonClickHandler);
             // 
             // InformationTitleLabel
             // 
@@ -585,6 +588,7 @@ namespace TimerPomodoro
             this.DetailedInformationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.DetailedInformationButton.UseAccentColor = false;
             this.DetailedInformationButton.UseVisualStyleBackColor = true;
+            this.DetailedInformationButton.Click += new System.EventHandler(this.ButtonClickHandler);
             // 
             // DescriptionAppLabel
             // 
