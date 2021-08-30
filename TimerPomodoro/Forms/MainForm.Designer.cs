@@ -58,19 +58,16 @@ namespace TimerPomodoro
             this.DarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.ThemeLabel = new MaterialSkin.Controls.MaterialLabel();
             this.AboutTabPage = new System.Windows.Forms.TabPage();
-            this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
-            this.AboutAppGroupBox = new System.Windows.Forms.GroupBox();
-            this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.DescriptionAppLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.DetailedInformationButton = new MaterialSkin.Controls.MaterialButton();
             this.InformationGroupBox = new System.Windows.Forms.GroupBox();
-            this.InformationTitleLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.GitHubProfileButton = new MaterialSkin.Controls.MaterialButton();
             this.EmailDeveloperButton = new MaterialSkin.Controls.MaterialButton();
             this.DocumentationButton = new MaterialSkin.Controls.MaterialButton();
-            this.VersionGroupBox = new System.Windows.Forms.GroupBox();
-            this.VersionTitleLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.VersionAppLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.GitHubProfileButton = new MaterialSkin.Controls.MaterialButton();
+            this.InformationTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.AboutAppGroupBox = new System.Windows.Forms.GroupBox();
+            this.DetailedInformationButton = new MaterialSkin.Controls.MaterialButton();
+            this.DescriptionAppLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
@@ -81,9 +78,8 @@ namespace TimerPomodoro
             this.ColorThemeGroupBox.SuspendLayout();
             this.ThemeGroupBox.SuspendLayout();
             this.AboutTabPage.SuspendLayout();
-            this.AboutAppGroupBox.SuspendLayout();
             this.InformationGroupBox.SuspendLayout();
-            this.VersionGroupBox.SuspendLayout();
+            this.AboutAppGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // SideMenuTabControl
@@ -470,7 +466,6 @@ namespace TimerPomodoro
             // AboutTabPage
             // 
             this.AboutTabPage.BackColor = System.Drawing.Color.White;
-            this.AboutTabPage.Controls.Add(this.VersionGroupBox);
             this.AboutTabPage.Controls.Add(this.InformationGroupBox);
             this.AboutTabPage.Controls.Add(this.AboutAppGroupBox);
             this.AboutTabPage.ImageKey = "info.png";
@@ -479,67 +474,6 @@ namespace TimerPomodoro
             this.AboutTabPage.Size = new System.Drawing.Size(586, 340);
             this.AboutTabPage.TabIndex = 2;
             this.AboutTabPage.Text = "About";
-            // 
-            // SideMenuImageList
-            // 
-            this.SideMenuImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("SideMenuImageList.ImageStream")));
-            this.SideMenuImageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.SideMenuImageList.Images.SetKeyName(0, "home.png");
-            this.SideMenuImageList.Images.SetKeyName(1, "info.png");
-            this.SideMenuImageList.Images.SetKeyName(2, "settings.png");
-            // 
-            // AboutAppGroupBox
-            // 
-            this.AboutAppGroupBox.Controls.Add(this.DetailedInformationButton);
-            this.AboutAppGroupBox.Controls.Add(this.DescriptionAppLabel);
-            this.AboutAppGroupBox.Controls.Add(this.AboutTitleLabel);
-            this.AboutAppGroupBox.Location = new System.Drawing.Point(6, 13);
-            this.AboutAppGroupBox.Name = "AboutAppGroupBox";
-            this.AboutAppGroupBox.Size = new System.Drawing.Size(525, 172);
-            this.AboutAppGroupBox.TabIndex = 1;
-            this.AboutAppGroupBox.TabStop = false;
-            // 
-            // AboutTitleLabel
-            // 
-            this.AboutTitleLabel.AutoSize = true;
-            this.AboutTitleLabel.Depth = 0;
-            this.AboutTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.AboutTitleLabel.Location = new System.Drawing.Point(8, -2);
-            this.AboutTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.AboutTitleLabel.Name = "AboutTitleLabel";
-            this.AboutTitleLabel.Size = new System.Drawing.Size(100, 19);
-            this.AboutTitleLabel.TabIndex = 1;
-            this.AboutTitleLabel.Text = "About the app";
-            // 
-            // DescriptionAppLabel
-            // 
-            this.DescriptionAppLabel.Depth = 0;
-            this.DescriptionAppLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.DescriptionAppLabel.Location = new System.Drawing.Point(8, 20);
-            this.DescriptionAppLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.DescriptionAppLabel.Name = "DescriptionAppLabel";
-            this.DescriptionAppLabel.Size = new System.Drawing.Size(511, 100);
-            this.DescriptionAppLabel.TabIndex = 2;
-            this.DescriptionAppLabel.Text = resources.GetString("DescriptionAppLabel.Text");
-            // 
-            // DetailedInformationButton
-            // 
-            this.DetailedInformationButton.AutoSize = false;
-            this.DetailedInformationButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.DetailedInformationButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.DetailedInformationButton.Depth = 0;
-            this.DetailedInformationButton.HighEmphasis = true;
-            this.DetailedInformationButton.Icon = null;
-            this.DetailedInformationButton.Location = new System.Drawing.Point(7, 121);
-            this.DetailedInformationButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.DetailedInformationButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.DetailedInformationButton.Name = "DetailedInformationButton";
-            this.DetailedInformationButton.Size = new System.Drawing.Size(180, 40);
-            this.DetailedInformationButton.TabIndex = 3;
-            this.DetailedInformationButton.Text = "Detailed information";
-            this.DetailedInformationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.DetailedInformationButton.UseAccentColor = false;
-            this.DetailedInformationButton.UseVisualStyleBackColor = true;
             // 
             // InformationGroupBox
             // 
@@ -552,37 +486,6 @@ namespace TimerPomodoro
             this.InformationGroupBox.Size = new System.Drawing.Size(450, 75);
             this.InformationGroupBox.TabIndex = 3;
             this.InformationGroupBox.TabStop = false;
-            // 
-            // InformationTitleLabel
-            // 
-            this.InformationTitleLabel.AutoSize = true;
-            this.InformationTitleLabel.Depth = 0;
-            this.InformationTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.InformationTitleLabel.Location = new System.Drawing.Point(8, -2);
-            this.InformationTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.InformationTitleLabel.Name = "InformationTitleLabel";
-            this.InformationTitleLabel.Size = new System.Drawing.Size(84, 19);
-            this.InformationTitleLabel.TabIndex = 1;
-            this.InformationTitleLabel.Text = "Information";
-            // 
-            // GitHubProfileButton
-            // 
-            this.GitHubProfileButton.AutoSize = false;
-            this.GitHubProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.GitHubProfileButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.GitHubProfileButton.Depth = 0;
-            this.GitHubProfileButton.HighEmphasis = true;
-            this.GitHubProfileButton.Icon = null;
-            this.GitHubProfileButton.Location = new System.Drawing.Point(7, 23);
-            this.GitHubProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.GitHubProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.GitHubProfileButton.Name = "GitHubProfileButton";
-            this.GitHubProfileButton.Size = new System.Drawing.Size(140, 40);
-            this.GitHubProfileButton.TabIndex = 2;
-            this.GitHubProfileButton.Text = "GitHub";
-            this.GitHubProfileButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.GitHubProfileButton.UseAccentColor = false;
-            this.GitHubProfileButton.UseVisualStyleBackColor = true;
             // 
             // EmailDeveloperButton
             // 
@@ -622,39 +525,97 @@ namespace TimerPomodoro
             this.DocumentationButton.UseAccentColor = false;
             this.DocumentationButton.UseVisualStyleBackColor = true;
             // 
-            // VersionGroupBox
+            // GitHubProfileButton
             // 
-            this.VersionGroupBox.Controls.Add(this.VersionAppLabel);
-            this.VersionGroupBox.Controls.Add(this.VersionTitleLabel);
-            this.VersionGroupBox.Location = new System.Drawing.Point(6, 290);
-            this.VersionGroupBox.Name = "VersionGroupBox";
-            this.VersionGroupBox.Size = new System.Drawing.Size(147, 65);
-            this.VersionGroupBox.TabIndex = 5;
-            this.VersionGroupBox.TabStop = false;
+            this.GitHubProfileButton.AutoSize = false;
+            this.GitHubProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.GitHubProfileButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.GitHubProfileButton.Depth = 0;
+            this.GitHubProfileButton.HighEmphasis = true;
+            this.GitHubProfileButton.Icon = null;
+            this.GitHubProfileButton.Location = new System.Drawing.Point(7, 23);
+            this.GitHubProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.GitHubProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GitHubProfileButton.Name = "GitHubProfileButton";
+            this.GitHubProfileButton.Size = new System.Drawing.Size(140, 40);
+            this.GitHubProfileButton.TabIndex = 2;
+            this.GitHubProfileButton.Text = "GitHub";
+            this.GitHubProfileButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.GitHubProfileButton.UseAccentColor = false;
+            this.GitHubProfileButton.UseVisualStyleBackColor = true;
             // 
-            // VersionTitleLabel
+            // InformationTitleLabel
             // 
-            this.VersionTitleLabel.AutoSize = true;
-            this.VersionTitleLabel.Depth = 0;
-            this.VersionTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.VersionTitleLabel.Location = new System.Drawing.Point(8, -2);
-            this.VersionTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.VersionTitleLabel.Name = "VersionTitleLabel";
-            this.VersionTitleLabel.Size = new System.Drawing.Size(54, 19);
-            this.VersionTitleLabel.TabIndex = 1;
-            this.VersionTitleLabel.Text = "Version";
+            this.InformationTitleLabel.AutoSize = true;
+            this.InformationTitleLabel.Depth = 0;
+            this.InformationTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.InformationTitleLabel.Location = new System.Drawing.Point(8, -2);
+            this.InformationTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.InformationTitleLabel.Name = "InformationTitleLabel";
+            this.InformationTitleLabel.Size = new System.Drawing.Size(84, 19);
+            this.InformationTitleLabel.TabIndex = 1;
+            this.InformationTitleLabel.Text = "Information";
             // 
-            // VersionAppLabel
+            // AboutAppGroupBox
             // 
-            this.VersionAppLabel.Depth = 0;
-            this.VersionAppLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.VersionAppLabel.Location = new System.Drawing.Point(8, 20);
-            this.VersionAppLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.VersionAppLabel.Name = "VersionAppLabel";
-            this.VersionAppLabel.Size = new System.Drawing.Size(133, 40);
-            this.VersionAppLabel.TabIndex = 2;
-            this.VersionAppLabel.Text = "Timer Pomodoro 0.2.0821";
-            this.VersionAppLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.AboutAppGroupBox.Controls.Add(this.DetailedInformationButton);
+            this.AboutAppGroupBox.Controls.Add(this.DescriptionAppLabel);
+            this.AboutAppGroupBox.Controls.Add(this.AboutTitleLabel);
+            this.AboutAppGroupBox.Location = new System.Drawing.Point(6, 13);
+            this.AboutAppGroupBox.Name = "AboutAppGroupBox";
+            this.AboutAppGroupBox.Size = new System.Drawing.Size(525, 172);
+            this.AboutAppGroupBox.TabIndex = 1;
+            this.AboutAppGroupBox.TabStop = false;
+            // 
+            // DetailedInformationButton
+            // 
+            this.DetailedInformationButton.AutoSize = false;
+            this.DetailedInformationButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.DetailedInformationButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.DetailedInformationButton.Depth = 0;
+            this.DetailedInformationButton.HighEmphasis = true;
+            this.DetailedInformationButton.Icon = null;
+            this.DetailedInformationButton.Location = new System.Drawing.Point(7, 121);
+            this.DetailedInformationButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.DetailedInformationButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DetailedInformationButton.Name = "DetailedInformationButton";
+            this.DetailedInformationButton.Size = new System.Drawing.Size(180, 40);
+            this.DetailedInformationButton.TabIndex = 3;
+            this.DetailedInformationButton.Text = "Detailed information";
+            this.DetailedInformationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.DetailedInformationButton.UseAccentColor = false;
+            this.DetailedInformationButton.UseVisualStyleBackColor = true;
+            // 
+            // DescriptionAppLabel
+            // 
+            this.DescriptionAppLabel.Depth = 0;
+            this.DescriptionAppLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.DescriptionAppLabel.Location = new System.Drawing.Point(8, 20);
+            this.DescriptionAppLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DescriptionAppLabel.Name = "DescriptionAppLabel";
+            this.DescriptionAppLabel.Size = new System.Drawing.Size(511, 100);
+            this.DescriptionAppLabel.TabIndex = 2;
+            this.DescriptionAppLabel.Text = resources.GetString("DescriptionAppLabel.Text");
+            // 
+            // AboutTitleLabel
+            // 
+            this.AboutTitleLabel.AutoSize = true;
+            this.AboutTitleLabel.Depth = 0;
+            this.AboutTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.AboutTitleLabel.Location = new System.Drawing.Point(8, -2);
+            this.AboutTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.AboutTitleLabel.Name = "AboutTitleLabel";
+            this.AboutTitleLabel.Size = new System.Drawing.Size(100, 19);
+            this.AboutTitleLabel.TabIndex = 1;
+            this.AboutTitleLabel.Text = "About the app";
+            // 
+            // SideMenuImageList
+            // 
+            this.SideMenuImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("SideMenuImageList.ImageStream")));
+            this.SideMenuImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.SideMenuImageList.Images.SetKeyName(0, "home.png");
+            this.SideMenuImageList.Images.SetKeyName(1, "info.png");
+            this.SideMenuImageList.Images.SetKeyName(2, "settings.png");
             // 
             // MainForm
             // 
@@ -686,12 +647,10 @@ namespace TimerPomodoro
             this.ThemeGroupBox.ResumeLayout(false);
             this.ThemeGroupBox.PerformLayout();
             this.AboutTabPage.ResumeLayout(false);
-            this.AboutAppGroupBox.ResumeLayout(false);
-            this.AboutAppGroupBox.PerformLayout();
             this.InformationGroupBox.ResumeLayout(false);
             this.InformationGroupBox.PerformLayout();
-            this.VersionGroupBox.ResumeLayout(false);
-            this.VersionGroupBox.PerformLayout();
+            this.AboutAppGroupBox.ResumeLayout(false);
+            this.AboutAppGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -735,9 +694,6 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialButton GitHubProfileButton;
         private MaterialSkin.Controls.MaterialButton EmailDeveloperButton;
         private MaterialSkin.Controls.MaterialButton DocumentationButton;
-        private System.Windows.Forms.GroupBox VersionGroupBox;
-        private MaterialSkin.Controls.MaterialLabel VersionTitleLabel;
-        private MaterialSkin.Controls.MaterialLabel VersionAppLabel;
     }
 }
 
