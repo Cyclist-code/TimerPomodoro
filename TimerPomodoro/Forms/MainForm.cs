@@ -57,11 +57,15 @@ namespace TimerPomodoro
             {
                 var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+                Properties.Settings.Default.DarkTheme = "1";
+                Properties.Settings.Default.Save();
             }
             else
             {
                 var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+                Properties.Settings.Default.DarkTheme = "0";
+                Properties.Settings.Default.Save();
             }
         }
         #endregion
