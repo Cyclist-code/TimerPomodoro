@@ -49,5 +49,22 @@ namespace TimerPomodoro
             }
         }
         #endregion
+
+        #region Choosing a dark theme
+        private void DarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (DarkThemeSwitch.Checked == true)
+            {
+                var materialSkinManager = MaterialSkinManager.Instance;
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            }
+            else
+            {
+                var materialSkinManager = MaterialSkinManager.Instance;
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            }
+        }
+        #endregion
+
     }
 }

@@ -450,6 +450,7 @@ namespace TimerPomodoro
             this.DarkThemeSwitch.TabIndex = 1;
             this.DarkThemeSwitch.Text = "Dark";
             this.DarkThemeSwitch.UseVisualStyleBackColor = true;
+            this.DarkThemeSwitch.CheckedChanged += new System.EventHandler(this.DarkThemeSwitch_CheckedChanged);
             // 
             // ThemeLabel
             // 
