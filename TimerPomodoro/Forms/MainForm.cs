@@ -19,10 +19,25 @@ namespace TimerPomodoro
         {
             InitializeComponent();
 
+            #region Installing the default theme
+            string theme = Properties.Settings.Default.DarkTheme;
+
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple800, Accent.Purple400, TextShade.WHITE);
+
+            if ((theme == "0") || (theme == "") || (theme == " "))
+            {
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple800, Accent.Purple400, TextShade.WHITE);
+            }
+            if (theme == "1")
+            {
+                DarkThemeSwitch.Checked = true;
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple800, Accent.Purple400, TextShade.WHITE);
+            }
+            #endregion
+
         }
 
         #region Handling button clicks
