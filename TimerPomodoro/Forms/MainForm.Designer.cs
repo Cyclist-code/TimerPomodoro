@@ -364,6 +364,7 @@ namespace TimerPomodoro
             this.OrangeRadioButton.TabStop = true;
             this.OrangeRadioButton.Text = "Orange";
             this.OrangeRadioButton.UseVisualStyleBackColor = true;
+            this.OrangeRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
             // 
             // BlueRadioButton
             // 
@@ -380,6 +381,7 @@ namespace TimerPomodoro
             this.BlueRadioButton.TabStop = true;
             this.BlueRadioButton.Text = "Blue";
             this.BlueRadioButton.UseVisualStyleBackColor = true;
+            this.BlueRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
             // 
             // GreenRadioButton
             // 
@@ -396,6 +398,7 @@ namespace TimerPomodoro
             this.GreenRadioButton.TabStop = true;
             this.GreenRadioButton.Text = "Green";
             this.GreenRadioButton.UseVisualStyleBackColor = true;
+            this.GreenRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
             // 
             // PurpleRadioButton
             // 
@@ -413,6 +416,7 @@ namespace TimerPomodoro
             this.PurpleRadioButton.TabStop = true;
             this.PurpleRadioButton.Text = "Purple";
             this.PurpleRadioButton.UseVisualStyleBackColor = true;
+            this.PurpleRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
             // 
             // ColorThemeLabel
             // 

@@ -15,6 +15,11 @@ namespace TimerPomodoro
 {
     public partial class MainForm : MaterialForm
     {
+        #region Global variables
+        MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
+        #endregion
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -22,7 +27,6 @@ namespace TimerPomodoro
             #region Installing the default theme
             string theme = Properties.Settings.Default.DarkTheme;
 
-            var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
 
             if ((theme == "0") || (theme == "") || (theme == " "))
@@ -39,6 +43,23 @@ namespace TimerPomodoro
             #endregion
 
         }
+
+        #region Choosing a color scheme for the application
+        private void ChoosingColorScheme(object sender, EventArgs e)
+        {
+            if (PurpleRadioButton.Checked == true)
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple800, Accent.Purple400, TextShade.WHITE);
+
+            if (GreenRadioButton.Checked == true)
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green700, Primary.Green900, Primary.Green500, Accent.Green400, TextShade.WHITE);
+
+            if (BlueRadioButton.Checked == true)
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue400, TextShade.WHITE);
+
+            if (OrangeRadioButton.Checked == true)
+                materialSkinManager.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
+        }
+        #endregion
 
         #region Handling button clicks
         private void ButtonClickHandler(object sender, EventArgs e)
@@ -70,14 +91,12 @@ namespace TimerPomodoro
         {
             if (DarkThemeSwitch.Checked == true)
             {
-                var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
                 Properties.Settings.Default.DarkTheme = "1";
                 Properties.Settings.Default.Save();
             }
             else
             {
-                var materialSkinManager = MaterialSkinManager.Instance;
                 materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
                 Properties.Settings.Default.DarkTheme = "0";
                 Properties.Settings.Default.Save();
