@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using TimerPomodoro.Services;
 
 namespace TimerPomodoro
 {
@@ -47,17 +48,7 @@ namespace TimerPomodoro
         #region Choosing a color scheme for the application
         private void ChoosingColorScheme(object sender, EventArgs e)
         {
-            if (PurpleRadioButton.Checked == true)
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple800, Accent.Purple400, TextShade.WHITE);
-
-            if (GreenRadioButton.Checked == true)
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Green700, Primary.Green900, Primary.Green500, Accent.Green400, TextShade.WHITE);
-
-            if (BlueRadioButton.Checked == true)
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue400, TextShade.WHITE);
-
-            if (OrangeRadioButton.Checked == true)
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
+            AppFormSettings.ChoosingColorScheme(PurpleRadioButton, GreenRadioButton, BlueRadioButton, OrangeRadioButton);
         }
         #endregion
 
