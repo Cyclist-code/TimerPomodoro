@@ -34,5 +34,17 @@ namespace TimerPomodoro.Properties {
                 this["DarkTheme"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ColorScheme {
+            get {
+                return ((string)(this["ColorScheme"]));
+            }
+            set {
+                this["ColorScheme"] = value;
+            }
+        }
     }
 }
