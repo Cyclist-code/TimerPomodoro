@@ -16,6 +16,24 @@ namespace TimerPomodoro.Services
         static ColorScheme colorSchemeOrange = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
         #endregion
 
+        #region Dark Theme Selection Method
+        public static void ChoosingDarkTheme(MaterialSwitch DarkThemeSwitch)
+        {
+            if (DarkThemeSwitch.Checked == true)
+            {
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+                Properties.Settings.Default.DarkTheme = "1";
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+                Properties.Settings.Default.DarkTheme = "0";
+                Properties.Settings.Default.Save();
+            }
+        }
+        #endregion
+
         #region Method for choosing a color scheme for an application
         public static void ChoosingColorScheme(RadioButton PurpleRadioButton, RadioButton GreenRadioButton,
             RadioButton BlueRadioButton, RadioButton OrangeRadioButton)

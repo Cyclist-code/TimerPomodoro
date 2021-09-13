@@ -80,18 +80,7 @@ namespace TimerPomodoro
         #region Choosing a dark theme
         private void DarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
         {
-            if (DarkThemeSwitch.Checked == true)
-            {
-                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-                Properties.Settings.Default.DarkTheme = "1";
-                Properties.Settings.Default.Save();
-            }
-            else
-            {
-                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-                Properties.Settings.Default.DarkTheme = "0";
-                Properties.Settings.Default.Save();
-            }
+            AppFormSettings.ChoosingDarkTheme(DarkThemeSwitch);
         }
         #endregion
 
