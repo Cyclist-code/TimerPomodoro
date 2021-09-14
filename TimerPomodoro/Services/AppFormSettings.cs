@@ -1,6 +1,5 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace TimerPomodoro.Services
@@ -14,6 +13,50 @@ namespace TimerPomodoro.Services
         static ColorScheme colorSchemeGreen = new ColorScheme(Primary.Green700, Primary.Green900, Primary.Green500, Accent.Green400, TextShade.WHITE);
         static ColorScheme colorSchemeBlue = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue400, TextShade.WHITE);
         static ColorScheme colorSchemeOrange = new ColorScheme(Primary.Orange800, Primary.Orange900, Primary.Orange500, Accent.Orange200, TextShade.WHITE);
+        #endregion
+
+        #region Default theme installation method
+        public static void InstallingDefaultTheme(MainForm mainForm, MaterialSwitch DarkThemeSwitch, 
+            MaterialRadioButton PurpleRadioButton, MaterialRadioButton GreenRadioButton, 
+            MaterialRadioButton BlueRadioButton, MaterialRadioButton OrangeRadioButton)
+        {
+            string theme = Properties.Settings.Default.DarkTheme;
+
+            materialSkinManager.AddFormToManage(mainForm);
+
+            if ((theme == "0") || (theme == "") || (theme == " "))
+            {
+                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;             
+            }
+            if (theme == "1")
+            {
+                DarkThemeSwitch.Checked = true;
+                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;               
+            }
+
+            string color = Properties.Settings.Default.ColorScheme;
+
+            if ((color == "0") || (color == "") || (color == " "))
+            {
+                materialSkinManager.ColorScheme = colorSchemePurple;
+                PurpleRadioButton.Checked = true;
+            }
+            if (color == "1")
+            {
+                materialSkinManager.ColorScheme = colorSchemeGreen;
+                GreenRadioButton.Checked = true;
+            }
+            if (color == "2")
+            {
+                materialSkinManager.ColorScheme = colorSchemeBlue;
+                BlueRadioButton.Checked = true;
+            }
+            if (color == "3")
+            {
+                materialSkinManager.ColorScheme = colorSchemeOrange;
+                OrangeRadioButton.Checked = true;
+            }
+        }
         #endregion
 
         #region Dark Theme Selection Method

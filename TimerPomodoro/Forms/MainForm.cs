@@ -16,33 +16,14 @@ namespace TimerPomodoro
 {
     public partial class MainForm : MaterialForm
     {
-        #region Global variables
-        MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
-        #endregion
-
-
         public MainForm()
         {
             InitializeComponent();
 
             #region Installing the default theme
-            string theme = Properties.Settings.Default.DarkTheme;
-
-            materialSkinManager.AddFormToManage(this);
-
-            if ((theme == "0") || (theme == "") || (theme == " "))
-            {
-                materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple800, Accent.Purple400, TextShade.WHITE);
-            }
-            if (theme == "1")
-            {
-                DarkThemeSwitch.Checked = true;
-                materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-                materialSkinManager.ColorScheme = new ColorScheme(Primary.Purple800, Primary.Purple900, Primary.Purple800, Accent.Purple400, TextShade.WHITE);
-            }
+            AppFormSettings.InstallingDefaultTheme(this, DarkThemeSwitch, PurpleRadioButton, GreenRadioButton,
+               BlueRadioButton, OrangeRadioButton);
             #endregion
-
         }
 
         #region Choosing a color scheme for the application
