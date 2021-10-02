@@ -37,26 +37,26 @@ namespace TimerPomodoro
             this.StartButton = new MaterialSkin.Controls.MaterialButton();
             this.TimerLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SettingsTabPage = new System.Windows.Forms.TabPage();
-            this.RestMinutesGroupBox = new System.Windows.Forms.GroupBox();
-            this.RestTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.RestMinutesMaterialCard = new MaterialSkin.Controls.MaterialCard();
             this.RestMinutesLabel = new MaterialSkin.Controls.MaterialLabel();
             this.RestNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.WorkMinutesGroupBox = new System.Windows.Forms.GroupBox();
+            this.RestTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.WorkTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.WorkMinutesMaterialCard = new MaterialSkin.Controls.MaterialCard();
             this.WorkMinutesLabel = new MaterialSkin.Controls.MaterialLabel();
             this.WorkNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.ColorThemeMaterialCard = new MaterialSkin.Controls.MaterialCard();
+            this.OrangeRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.PurpleRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.BlueRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.GreenRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
+            this.ThemeLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.DarkThemeMaterialCard = new MaterialSkin.Controls.MaterialCard();
+            this.DarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            this.ColorThemeLabel = new MaterialSkin.Controls.MaterialLabel();
             this.TimerSettingsTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.DelimiterPanel = new System.Windows.Forms.Panel();
             this.DesignTitleLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.ColorThemeGroupBox = new System.Windows.Forms.GroupBox();
-            this.OrangeRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
-            this.BlueRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
-            this.GreenRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
-            this.PurpleRadioButton = new MaterialSkin.Controls.MaterialRadioButton();
-            this.ColorThemeLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.ThemeGroupBox = new System.Windows.Forms.GroupBox();
-            this.DarkThemeSwitch = new MaterialSkin.Controls.MaterialSwitch();
-            this.ThemeLabel = new MaterialSkin.Controls.MaterialLabel();
             this.AboutTabPage = new System.Windows.Forms.TabPage();
             this.InformationGroupBox = new System.Windows.Forms.GroupBox();
             this.EmailDeveloperButton = new MaterialSkin.Controls.MaterialButton();
@@ -71,12 +71,12 @@ namespace TimerPomodoro
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
-            this.RestMinutesGroupBox.SuspendLayout();
+            this.RestMinutesMaterialCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestNumericUpDown)).BeginInit();
-            this.WorkMinutesGroupBox.SuspendLayout();
+            this.WorkMinutesMaterialCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WorkNumericUpDown)).BeginInit();
-            this.ColorThemeGroupBox.SuspendLayout();
-            this.ThemeGroupBox.SuspendLayout();
+            this.ColorThemeMaterialCard.SuspendLayout();
+            this.DarkThemeMaterialCard.SuspendLayout();
             this.AboutTabPage.SuspendLayout();
             this.InformationGroupBox.SuspendLayout();
             this.AboutAppGroupBox.SuspendLayout();
@@ -166,13 +166,17 @@ namespace TimerPomodoro
             // SettingsTabPage
             // 
             this.SettingsTabPage.BackColor = System.Drawing.Color.White;
-            this.SettingsTabPage.Controls.Add(this.RestMinutesGroupBox);
-            this.SettingsTabPage.Controls.Add(this.WorkMinutesGroupBox);
+            this.SettingsTabPage.Controls.Add(this.RestMinutesMaterialCard);
+            this.SettingsTabPage.Controls.Add(this.RestTitleLabel);
+            this.SettingsTabPage.Controls.Add(this.WorkTitleLabel);
+            this.SettingsTabPage.Controls.Add(this.WorkMinutesMaterialCard);
+            this.SettingsTabPage.Controls.Add(this.ColorThemeMaterialCard);
+            this.SettingsTabPage.Controls.Add(this.ThemeLabel);
+            this.SettingsTabPage.Controls.Add(this.DarkThemeMaterialCard);
+            this.SettingsTabPage.Controls.Add(this.ColorThemeLabel);
             this.SettingsTabPage.Controls.Add(this.TimerSettingsTitleLabel);
             this.SettingsTabPage.Controls.Add(this.DelimiterPanel);
             this.SettingsTabPage.Controls.Add(this.DesignTitleLabel);
-            this.SettingsTabPage.Controls.Add(this.ColorThemeGroupBox);
-            this.SettingsTabPage.Controls.Add(this.ThemeGroupBox);
             this.SettingsTabPage.ImageKey = "settings.png";
             this.SettingsTabPage.Location = new System.Drawing.Point(4, 39);
             this.SettingsTabPage.Name = "SettingsTabPage";
@@ -181,35 +185,27 @@ namespace TimerPomodoro
             this.SettingsTabPage.TabIndex = 1;
             this.SettingsTabPage.Text = "Settings";
             // 
-            // RestMinutesGroupBox
+            // RestMinutesMaterialCard
             // 
-            this.RestMinutesGroupBox.Controls.Add(this.RestTitleLabel);
-            this.RestMinutesGroupBox.Controls.Add(this.RestMinutesLabel);
-            this.RestMinutesGroupBox.Controls.Add(this.RestNumericUpDown);
-            this.RestMinutesGroupBox.Location = new System.Drawing.Point(153, 169);
-            this.RestMinutesGroupBox.Name = "RestMinutesGroupBox";
-            this.RestMinutesGroupBox.Size = new System.Drawing.Size(140, 60);
-            this.RestMinutesGroupBox.TabIndex = 9;
-            this.RestMinutesGroupBox.TabStop = false;
-            // 
-            // RestTitleLabel
-            // 
-            this.RestTitleLabel.AutoSize = true;
-            this.RestTitleLabel.Depth = 0;
-            this.RestTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.RestTitleLabel.Location = new System.Drawing.Point(8, -2);
-            this.RestTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.RestTitleLabel.Name = "RestTitleLabel";
-            this.RestTitleLabel.Size = new System.Drawing.Size(32, 19);
-            this.RestTitleLabel.TabIndex = 1;
-            this.RestTitleLabel.Text = "Rest";
+            this.RestMinutesMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.RestMinutesMaterialCard.Controls.Add(this.RestMinutesLabel);
+            this.RestMinutesMaterialCard.Controls.Add(this.RestNumericUpDown);
+            this.RestMinutesMaterialCard.Depth = 0;
+            this.RestMinutesMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RestMinutesMaterialCard.Location = new System.Drawing.Point(169, 203);
+            this.RestMinutesMaterialCard.Margin = new System.Windows.Forms.Padding(14);
+            this.RestMinutesMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RestMinutesMaterialCard.Name = "RestMinutesMaterialCard";
+            this.RestMinutesMaterialCard.Padding = new System.Windows.Forms.Padding(14);
+            this.RestMinutesMaterialCard.Size = new System.Drawing.Size(140, 50);
+            this.RestMinutesMaterialCard.TabIndex = 13;
             // 
             // RestMinutesLabel
             // 
             this.RestMinutesLabel.AutoSize = true;
             this.RestMinutesLabel.Depth = 0;
             this.RestMinutesLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.RestMinutesLabel.Location = new System.Drawing.Point(8, 28);
+            this.RestMinutesLabel.Location = new System.Drawing.Point(12, 15);
             this.RestMinutesLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.RestMinutesLabel.Name = "RestMinutesLabel";
             this.RestMinutesLabel.Size = new System.Drawing.Size(62, 19);
@@ -219,7 +215,7 @@ namespace TimerPomodoro
             // RestNumericUpDown
             // 
             this.RestNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RestNumericUpDown.Location = new System.Drawing.Point(76, 25);
+            this.RestNumericUpDown.Location = new System.Drawing.Point(80, 13);
             this.RestNumericUpDown.Maximum = new decimal(new int[] {
             10,
             0,
@@ -239,35 +235,51 @@ namespace TimerPomodoro
             0,
             0});
             // 
-            // WorkMinutesGroupBox
+            // RestTitleLabel
             // 
-            this.WorkMinutesGroupBox.Controls.Add(this.WorkTitleLabel);
-            this.WorkMinutesGroupBox.Controls.Add(this.WorkMinutesLabel);
-            this.WorkMinutesGroupBox.Controls.Add(this.WorkNumericUpDown);
-            this.WorkMinutesGroupBox.Location = new System.Drawing.Point(6, 169);
-            this.WorkMinutesGroupBox.Name = "WorkMinutesGroupBox";
-            this.WorkMinutesGroupBox.Size = new System.Drawing.Size(140, 60);
-            this.WorkMinutesGroupBox.TabIndex = 2;
-            this.WorkMinutesGroupBox.TabStop = false;
+            this.RestTitleLabel.AutoSize = true;
+            this.RestTitleLabel.Depth = 0;
+            this.RestTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.RestTitleLabel.Location = new System.Drawing.Point(168, 182);
+            this.RestTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RestTitleLabel.Name = "RestTitleLabel";
+            this.RestTitleLabel.Size = new System.Drawing.Size(32, 19);
+            this.RestTitleLabel.TabIndex = 1;
+            this.RestTitleLabel.Text = "Rest";
             // 
             // WorkTitleLabel
             // 
             this.WorkTitleLabel.AutoSize = true;
             this.WorkTitleLabel.Depth = 0;
             this.WorkTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.WorkTitleLabel.Location = new System.Drawing.Point(8, -2);
+            this.WorkTitleLabel.Location = new System.Drawing.Point(14, 182);
             this.WorkTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.WorkTitleLabel.Name = "WorkTitleLabel";
             this.WorkTitleLabel.Size = new System.Drawing.Size(37, 19);
             this.WorkTitleLabel.TabIndex = 1;
             this.WorkTitleLabel.Text = "Work";
             // 
+            // WorkMinutesMaterialCard
+            // 
+            this.WorkMinutesMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.WorkMinutesMaterialCard.Controls.Add(this.WorkMinutesLabel);
+            this.WorkMinutesMaterialCard.Controls.Add(this.WorkNumericUpDown);
+            this.WorkMinutesMaterialCard.Depth = 0;
+            this.WorkMinutesMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.WorkMinutesMaterialCard.Location = new System.Drawing.Point(12, 203);
+            this.WorkMinutesMaterialCard.Margin = new System.Windows.Forms.Padding(14);
+            this.WorkMinutesMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
+            this.WorkMinutesMaterialCard.Name = "WorkMinutesMaterialCard";
+            this.WorkMinutesMaterialCard.Padding = new System.Windows.Forms.Padding(14);
+            this.WorkMinutesMaterialCard.Size = new System.Drawing.Size(140, 50);
+            this.WorkMinutesMaterialCard.TabIndex = 12;
+            // 
             // WorkMinutesLabel
             // 
             this.WorkMinutesLabel.AutoSize = true;
             this.WorkMinutesLabel.Depth = 0;
             this.WorkMinutesLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.WorkMinutesLabel.Location = new System.Drawing.Point(8, 28);
+            this.WorkMinutesLabel.Location = new System.Drawing.Point(12, 15);
             this.WorkMinutesLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.WorkMinutesLabel.Name = "WorkMinutesLabel";
             this.WorkMinutesLabel.Size = new System.Drawing.Size(62, 19);
@@ -282,7 +294,7 @@ namespace TimerPomodoro
             0,
             0,
             0});
-            this.WorkNumericUpDown.Location = new System.Drawing.Point(76, 25);
+            this.WorkNumericUpDown.Location = new System.Drawing.Point(80, 13);
             this.WorkNumericUpDown.Maximum = new decimal(new int[] {
             40,
             0,
@@ -302,58 +314,28 @@ namespace TimerPomodoro
             0,
             0});
             // 
-            // TimerSettingsTitleLabel
+            // ColorThemeMaterialCard
             // 
-            this.TimerSettingsTitleLabel.AutoSize = true;
-            this.TimerSettingsTitleLabel.Depth = 0;
-            this.TimerSettingsTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.TimerSettingsTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.TimerSettingsTitleLabel.Location = new System.Drawing.Point(13, 132);
-            this.TimerSettingsTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.TimerSettingsTitleLabel.Name = "TimerSettingsTitleLabel";
-            this.TimerSettingsTitleLabel.Size = new System.Drawing.Size(130, 24);
-            this.TimerSettingsTitleLabel.TabIndex = 5;
-            this.TimerSettingsTitleLabel.Text = "Timer settings";
-            // 
-            // DelimiterPanel
-            // 
-            this.DelimiterPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DelimiterPanel.Location = new System.Drawing.Point(6, 120);
-            this.DelimiterPanel.Name = "DelimiterPanel";
-            this.DelimiterPanel.Size = new System.Drawing.Size(525, 1);
-            this.DelimiterPanel.TabIndex = 4;
-            // 
-            // DesignTitleLabel
-            // 
-            this.DesignTitleLabel.AutoSize = true;
-            this.DesignTitleLabel.Depth = 0;
-            this.DesignTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.DesignTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.DesignTitleLabel.Location = new System.Drawing.Point(13, 13);
-            this.DesignTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.DesignTitleLabel.Name = "DesignTitleLabel";
-            this.DesignTitleLabel.Size = new System.Drawing.Size(165, 24);
-            this.DesignTitleLabel.TabIndex = 3;
-            this.DesignTitleLabel.Text = "Application design";
-            // 
-            // ColorThemeGroupBox
-            // 
-            this.ColorThemeGroupBox.Controls.Add(this.OrangeRadioButton);
-            this.ColorThemeGroupBox.Controls.Add(this.BlueRadioButton);
-            this.ColorThemeGroupBox.Controls.Add(this.GreenRadioButton);
-            this.ColorThemeGroupBox.Controls.Add(this.PurpleRadioButton);
-            this.ColorThemeGroupBox.Controls.Add(this.ColorThemeLabel);
-            this.ColorThemeGroupBox.Location = new System.Drawing.Point(142, 50);
-            this.ColorThemeGroupBox.Name = "ColorThemeGroupBox";
-            this.ColorThemeGroupBox.Size = new System.Drawing.Size(323, 60);
-            this.ColorThemeGroupBox.TabIndex = 2;
-            this.ColorThemeGroupBox.TabStop = false;
+            this.ColorThemeMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ColorThemeMaterialCard.Controls.Add(this.OrangeRadioButton);
+            this.ColorThemeMaterialCard.Controls.Add(this.PurpleRadioButton);
+            this.ColorThemeMaterialCard.Controls.Add(this.BlueRadioButton);
+            this.ColorThemeMaterialCard.Controls.Add(this.GreenRadioButton);
+            this.ColorThemeMaterialCard.Depth = 0;
+            this.ColorThemeMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ColorThemeMaterialCard.Location = new System.Drawing.Point(159, 70);
+            this.ColorThemeMaterialCard.Margin = new System.Windows.Forms.Padding(14);
+            this.ColorThemeMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ColorThemeMaterialCard.Name = "ColorThemeMaterialCard";
+            this.ColorThemeMaterialCard.Padding = new System.Windows.Forms.Padding(14);
+            this.ColorThemeMaterialCard.Size = new System.Drawing.Size(323, 50);
+            this.ColorThemeMaterialCard.TabIndex = 11;
             // 
             // OrangeRadioButton
             // 
             this.OrangeRadioButton.AutoSize = true;
             this.OrangeRadioButton.Depth = 0;
-            this.OrangeRadioButton.Location = new System.Drawing.Point(225, 15);
+            this.OrangeRadioButton.Location = new System.Drawing.Point(228, 6);
             this.OrangeRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.OrangeRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
             this.OrangeRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
@@ -366,11 +348,29 @@ namespace TimerPomodoro
             this.OrangeRadioButton.UseVisualStyleBackColor = true;
             this.OrangeRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
             // 
+            // PurpleRadioButton
+            // 
+            this.PurpleRadioButton.AutoSize = true;
+            this.PurpleRadioButton.Checked = true;
+            this.PurpleRadioButton.Depth = 0;
+            this.PurpleRadioButton.Location = new System.Drawing.Point(1, 6);
+            this.PurpleRadioButton.Margin = new System.Windows.Forms.Padding(0);
+            this.PurpleRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.PurpleRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.PurpleRadioButton.Name = "PurpleRadioButton";
+            this.PurpleRadioButton.Ripple = true;
+            this.PurpleRadioButton.Size = new System.Drawing.Size(80, 37);
+            this.PurpleRadioButton.TabIndex = 3;
+            this.PurpleRadioButton.TabStop = true;
+            this.PurpleRadioButton.Text = "Purple";
+            this.PurpleRadioButton.UseVisualStyleBackColor = true;
+            this.PurpleRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
+            // 
             // BlueRadioButton
             // 
             this.BlueRadioButton.AutoSize = true;
             this.BlueRadioButton.Depth = 0;
-            this.BlueRadioButton.Location = new System.Drawing.Point(159, 15);
+            this.BlueRadioButton.Location = new System.Drawing.Point(160, 6);
             this.BlueRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.BlueRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
             this.BlueRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
@@ -387,7 +387,7 @@ namespace TimerPomodoro
             // 
             this.GreenRadioButton.AutoSize = true;
             this.GreenRadioButton.Depth = 0;
-            this.GreenRadioButton.Location = new System.Drawing.Point(83, 15);
+            this.GreenRadioButton.Location = new System.Drawing.Point(83, 6);
             this.GreenRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.GreenRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
             this.GreenRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
@@ -400,51 +400,37 @@ namespace TimerPomodoro
             this.GreenRadioButton.UseVisualStyleBackColor = true;
             this.GreenRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
             // 
-            // PurpleRadioButton
+            // ThemeLabel
             // 
-            this.PurpleRadioButton.AutoSize = true;
-            this.PurpleRadioButton.Checked = true;
-            this.PurpleRadioButton.Depth = 0;
-            this.PurpleRadioButton.Location = new System.Drawing.Point(3, 15);
-            this.PurpleRadioButton.Margin = new System.Windows.Forms.Padding(0);
-            this.PurpleRadioButton.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.PurpleRadioButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.PurpleRadioButton.Name = "PurpleRadioButton";
-            this.PurpleRadioButton.Ripple = true;
-            this.PurpleRadioButton.Size = new System.Drawing.Size(80, 37);
-            this.PurpleRadioButton.TabIndex = 3;
-            this.PurpleRadioButton.TabStop = true;
-            this.PurpleRadioButton.Text = "Purple";
-            this.PurpleRadioButton.UseVisualStyleBackColor = true;
-            this.PurpleRadioButton.CheckedChanged += new System.EventHandler(this.ChoosingColorScheme);
+            this.ThemeLabel.AutoSize = true;
+            this.ThemeLabel.Depth = 0;
+            this.ThemeLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ThemeLabel.Location = new System.Drawing.Point(12, 47);
+            this.ThemeLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ThemeLabel.Name = "ThemeLabel";
+            this.ThemeLabel.Size = new System.Drawing.Size(50, 19);
+            this.ThemeLabel.TabIndex = 1;
+            this.ThemeLabel.Text = "Theme";
             // 
-            // ColorThemeLabel
+            // DarkThemeMaterialCard
             // 
-            this.ColorThemeLabel.AutoSize = true;
-            this.ColorThemeLabel.Depth = 0;
-            this.ColorThemeLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ColorThemeLabel.Location = new System.Drawing.Point(8, -2);
-            this.ColorThemeLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ColorThemeLabel.Name = "ColorThemeLabel";
-            this.ColorThemeLabel.Size = new System.Drawing.Size(97, 19);
-            this.ColorThemeLabel.TabIndex = 1;
-            this.ColorThemeLabel.Text = "Color scheme";
-            // 
-            // ThemeGroupBox
-            // 
-            this.ThemeGroupBox.Controls.Add(this.DarkThemeSwitch);
-            this.ThemeGroupBox.Controls.Add(this.ThemeLabel);
-            this.ThemeGroupBox.Location = new System.Drawing.Point(6, 50);
-            this.ThemeGroupBox.Name = "ThemeGroupBox";
-            this.ThemeGroupBox.Size = new System.Drawing.Size(130, 60);
-            this.ThemeGroupBox.TabIndex = 0;
-            this.ThemeGroupBox.TabStop = false;
+            this.DarkThemeMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DarkThemeMaterialCard.Controls.Add(this.DarkThemeSwitch);
+            this.DarkThemeMaterialCard.Depth = 0;
+            this.DarkThemeMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.DarkThemeMaterialCard.Location = new System.Drawing.Point(12, 70);
+            this.DarkThemeMaterialCard.Margin = new System.Windows.Forms.Padding(14);
+            this.DarkThemeMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DarkThemeMaterialCard.Name = "DarkThemeMaterialCard";
+            this.DarkThemeMaterialCard.Padding = new System.Windows.Forms.Padding(14);
+            this.DarkThemeMaterialCard.Size = new System.Drawing.Size(130, 50);
+            this.DarkThemeMaterialCard.TabIndex = 10;
             // 
             // DarkThemeSwitch
             // 
             this.DarkThemeSwitch.AutoSize = true;
             this.DarkThemeSwitch.Depth = 0;
-            this.DarkThemeSwitch.Location = new System.Drawing.Point(11, 16);
+            this.DarkThemeSwitch.Location = new System.Drawing.Point(18, 6);
             this.DarkThemeSwitch.Margin = new System.Windows.Forms.Padding(0);
             this.DarkThemeSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
             this.DarkThemeSwitch.MouseState = MaterialSkin.MouseState.HOVER;
@@ -456,17 +442,51 @@ namespace TimerPomodoro
             this.DarkThemeSwitch.UseVisualStyleBackColor = true;
             this.DarkThemeSwitch.CheckedChanged += new System.EventHandler(this.DarkThemeSwitch_CheckedChanged);
             // 
-            // ThemeLabel
+            // ColorThemeLabel
             // 
-            this.ThemeLabel.AutoSize = true;
-            this.ThemeLabel.Depth = 0;
-            this.ThemeLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ThemeLabel.Location = new System.Drawing.Point(8, -2);
-            this.ThemeLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ThemeLabel.Name = "ThemeLabel";
-            this.ThemeLabel.Size = new System.Drawing.Size(50, 19);
-            this.ThemeLabel.TabIndex = 1;
-            this.ThemeLabel.Text = "Theme";
+            this.ColorThemeLabel.AutoSize = true;
+            this.ColorThemeLabel.Depth = 0;
+            this.ColorThemeLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ColorThemeLabel.Location = new System.Drawing.Point(157, 47);
+            this.ColorThemeLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ColorThemeLabel.Name = "ColorThemeLabel";
+            this.ColorThemeLabel.Size = new System.Drawing.Size(97, 19);
+            this.ColorThemeLabel.TabIndex = 1;
+            this.ColorThemeLabel.Text = "Color scheme";
+            // 
+            // TimerSettingsTitleLabel
+            // 
+            this.TimerSettingsTitleLabel.AutoSize = true;
+            this.TimerSettingsTitleLabel.Depth = 0;
+            this.TimerSettingsTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.TimerSettingsTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.TimerSettingsTitleLabel.Location = new System.Drawing.Point(13, 148);
+            this.TimerSettingsTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TimerSettingsTitleLabel.Name = "TimerSettingsTitleLabel";
+            this.TimerSettingsTitleLabel.Size = new System.Drawing.Size(130, 24);
+            this.TimerSettingsTitleLabel.TabIndex = 5;
+            this.TimerSettingsTitleLabel.Text = "Timer settings";
+            // 
+            // DelimiterPanel
+            // 
+            this.DelimiterPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DelimiterPanel.Location = new System.Drawing.Point(6, 136);
+            this.DelimiterPanel.Name = "DelimiterPanel";
+            this.DelimiterPanel.Size = new System.Drawing.Size(525, 1);
+            this.DelimiterPanel.TabIndex = 4;
+            // 
+            // DesignTitleLabel
+            // 
+            this.DesignTitleLabel.AutoSize = true;
+            this.DesignTitleLabel.Depth = 0;
+            this.DesignTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.DesignTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.DesignTitleLabel.Location = new System.Drawing.Point(13, 13);
+            this.DesignTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DesignTitleLabel.Name = "DesignTitleLabel";
+            this.DesignTitleLabel.Size = new System.Drawing.Size(165, 24);
+            this.DesignTitleLabel.TabIndex = 3;
+            this.DesignTitleLabel.Text = "Application design";
             // 
             // AboutTabPage
             // 
@@ -645,16 +665,16 @@ namespace TimerPomodoro
             this.HomeTabPage.PerformLayout();
             this.SettingsTabPage.ResumeLayout(false);
             this.SettingsTabPage.PerformLayout();
-            this.RestMinutesGroupBox.ResumeLayout(false);
-            this.RestMinutesGroupBox.PerformLayout();
+            this.RestMinutesMaterialCard.ResumeLayout(false);
+            this.RestMinutesMaterialCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RestNumericUpDown)).EndInit();
-            this.WorkMinutesGroupBox.ResumeLayout(false);
-            this.WorkMinutesGroupBox.PerformLayout();
+            this.WorkMinutesMaterialCard.ResumeLayout(false);
+            this.WorkMinutesMaterialCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WorkNumericUpDown)).EndInit();
-            this.ColorThemeGroupBox.ResumeLayout(false);
-            this.ColorThemeGroupBox.PerformLayout();
-            this.ThemeGroupBox.ResumeLayout(false);
-            this.ThemeGroupBox.PerformLayout();
+            this.ColorThemeMaterialCard.ResumeLayout(false);
+            this.ColorThemeMaterialCard.PerformLayout();
+            this.DarkThemeMaterialCard.ResumeLayout(false);
+            this.DarkThemeMaterialCard.PerformLayout();
             this.AboutTabPage.ResumeLayout(false);
             this.InformationGroupBox.ResumeLayout(false);
             this.InformationGroupBox.PerformLayout();
@@ -674,10 +694,7 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialLabel TimerLabel;
         private MaterialSkin.Controls.MaterialButton StartButton;
         private MaterialSkin.Controls.MaterialButton StopButton;
-        private System.Windows.Forms.GroupBox ThemeGroupBox;
         private MaterialSkin.Controls.MaterialLabel ThemeLabel;
-        private MaterialSkin.Controls.MaterialSwitch DarkThemeSwitch;
-        private System.Windows.Forms.GroupBox ColorThemeGroupBox;
         private MaterialSkin.Controls.MaterialLabel ColorThemeLabel;
         private MaterialSkin.Controls.MaterialRadioButton BlueRadioButton;
         private MaterialSkin.Controls.MaterialRadioButton GreenRadioButton;
@@ -688,9 +705,7 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialLabel TimerSettingsTitleLabel;
         private MaterialSkin.Controls.MaterialLabel WorkMinutesLabel;
         private System.Windows.Forms.NumericUpDown WorkNumericUpDown;
-        private System.Windows.Forms.GroupBox WorkMinutesGroupBox;
         private MaterialSkin.Controls.MaterialLabel WorkTitleLabel;
-        private System.Windows.Forms.GroupBox RestMinutesGroupBox;
         private MaterialSkin.Controls.MaterialLabel RestTitleLabel;
         private MaterialSkin.Controls.MaterialLabel RestMinutesLabel;
         private System.Windows.Forms.NumericUpDown RestNumericUpDown;
@@ -703,6 +718,11 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialButton GitHubProfileButton;
         private MaterialSkin.Controls.MaterialButton EmailDeveloperButton;
         private MaterialSkin.Controls.MaterialButton DocumentationButton;
+        private MaterialSkin.Controls.MaterialCard DarkThemeMaterialCard;
+        private MaterialSkin.Controls.MaterialSwitch DarkThemeSwitch;
+        private MaterialSkin.Controls.MaterialCard ColorThemeMaterialCard;
+        private MaterialSkin.Controls.MaterialCard WorkMinutesMaterialCard;
+        private MaterialSkin.Controls.MaterialCard RestMinutesMaterialCard;
     }
 }
 
