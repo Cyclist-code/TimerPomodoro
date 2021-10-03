@@ -63,11 +63,11 @@ namespace TimerPomodoro
             this.DocumentationButton = new MaterialSkin.Controls.MaterialButton();
             this.GitHubProfileButton = new MaterialSkin.Controls.MaterialButton();
             this.InformationTitleLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.AboutAppGroupBox = new System.Windows.Forms.GroupBox();
             this.DetailedInformationButton = new MaterialSkin.Controls.MaterialButton();
             this.DescriptionAppLabel = new MaterialSkin.Controls.MaterialLabel();
             this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
+            this.AboutAppMaterialCard = new MaterialSkin.Controls.MaterialCard();
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
@@ -79,7 +79,7 @@ namespace TimerPomodoro
             this.DarkThemeMaterialCard.SuspendLayout();
             this.AboutTabPage.SuspendLayout();
             this.InformationGroupBox.SuspendLayout();
-            this.AboutAppGroupBox.SuspendLayout();
+            this.AboutAppMaterialCard.SuspendLayout();
             this.SuspendLayout();
             // 
             // SideMenuTabControl
@@ -491,8 +491,9 @@ namespace TimerPomodoro
             // AboutTabPage
             // 
             this.AboutTabPage.BackColor = System.Drawing.Color.White;
+            this.AboutTabPage.Controls.Add(this.AboutAppMaterialCard);
             this.AboutTabPage.Controls.Add(this.InformationGroupBox);
-            this.AboutTabPage.Controls.Add(this.AboutAppGroupBox);
+            this.AboutTabPage.Controls.Add(this.AboutTitleLabel);
             this.AboutTabPage.ImageKey = "info.png";
             this.AboutTabPage.Location = new System.Drawing.Point(4, 39);
             this.AboutTabPage.Name = "AboutTabPage";
@@ -506,7 +507,7 @@ namespace TimerPomodoro
             this.InformationGroupBox.Controls.Add(this.DocumentationButton);
             this.InformationGroupBox.Controls.Add(this.GitHubProfileButton);
             this.InformationGroupBox.Controls.Add(this.InformationTitleLabel);
-            this.InformationGroupBox.Location = new System.Drawing.Point(6, 199);
+            this.InformationGroupBox.Location = new System.Drawing.Point(6, 222);
             this.InformationGroupBox.Name = "InformationGroupBox";
             this.InformationGroupBox.Size = new System.Drawing.Size(450, 75);
             this.InformationGroupBox.TabIndex = 3;
@@ -584,17 +585,6 @@ namespace TimerPomodoro
             this.InformationTitleLabel.TabIndex = 1;
             this.InformationTitleLabel.Text = "Information";
             // 
-            // AboutAppGroupBox
-            // 
-            this.AboutAppGroupBox.Controls.Add(this.DetailedInformationButton);
-            this.AboutAppGroupBox.Controls.Add(this.DescriptionAppLabel);
-            this.AboutAppGroupBox.Controls.Add(this.AboutTitleLabel);
-            this.AboutAppGroupBox.Location = new System.Drawing.Point(6, 13);
-            this.AboutAppGroupBox.Name = "AboutAppGroupBox";
-            this.AboutAppGroupBox.Size = new System.Drawing.Size(525, 172);
-            this.AboutAppGroupBox.TabIndex = 1;
-            this.AboutAppGroupBox.TabStop = false;
-            // 
             // DetailedInformationButton
             // 
             this.DetailedInformationButton.AutoSize = false;
@@ -603,7 +593,7 @@ namespace TimerPomodoro
             this.DetailedInformationButton.Depth = 0;
             this.DetailedInformationButton.HighEmphasis = true;
             this.DetailedInformationButton.Icon = null;
-            this.DetailedInformationButton.Location = new System.Drawing.Point(7, 121);
+            this.DetailedInformationButton.Location = new System.Drawing.Point(7, 120);
             this.DetailedInformationButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.DetailedInformationButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.DetailedInformationButton.Name = "DetailedInformationButton";
@@ -619,7 +609,7 @@ namespace TimerPomodoro
             // 
             this.DescriptionAppLabel.Depth = 0;
             this.DescriptionAppLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.DescriptionAppLabel.Location = new System.Drawing.Point(8, 20);
+            this.DescriptionAppLabel.Location = new System.Drawing.Point(8, 14);
             this.DescriptionAppLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.DescriptionAppLabel.Name = "DescriptionAppLabel";
             this.DescriptionAppLabel.Size = new System.Drawing.Size(511, 100);
@@ -631,7 +621,7 @@ namespace TimerPomodoro
             this.AboutTitleLabel.AutoSize = true;
             this.AboutTitleLabel.Depth = 0;
             this.AboutTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.AboutTitleLabel.Location = new System.Drawing.Point(8, -2);
+            this.AboutTitleLabel.Location = new System.Drawing.Point(10, 13);
             this.AboutTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.AboutTitleLabel.Name = "AboutTitleLabel";
             this.AboutTitleLabel.Size = new System.Drawing.Size(100, 19);
@@ -645,6 +635,21 @@ namespace TimerPomodoro
             this.SideMenuImageList.Images.SetKeyName(0, "home.png");
             this.SideMenuImageList.Images.SetKeyName(1, "info.png");
             this.SideMenuImageList.Images.SetKeyName(2, "settings.png");
+            // 
+            // AboutAppMaterialCard
+            // 
+            this.AboutAppMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.AboutAppMaterialCard.Controls.Add(this.DetailedInformationButton);
+            this.AboutAppMaterialCard.Controls.Add(this.DescriptionAppLabel);
+            this.AboutAppMaterialCard.Depth = 0;
+            this.AboutAppMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.AboutAppMaterialCard.Location = new System.Drawing.Point(6, 36);
+            this.AboutAppMaterialCard.Margin = new System.Windows.Forms.Padding(14);
+            this.AboutAppMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
+            this.AboutAppMaterialCard.Name = "AboutAppMaterialCard";
+            this.AboutAppMaterialCard.Padding = new System.Windows.Forms.Padding(14);
+            this.AboutAppMaterialCard.Size = new System.Drawing.Size(525, 172);
+            this.AboutAppMaterialCard.TabIndex = 4;
             // 
             // MainForm
             // 
@@ -676,10 +681,10 @@ namespace TimerPomodoro
             this.DarkThemeMaterialCard.ResumeLayout(false);
             this.DarkThemeMaterialCard.PerformLayout();
             this.AboutTabPage.ResumeLayout(false);
+            this.AboutTabPage.PerformLayout();
             this.InformationGroupBox.ResumeLayout(false);
             this.InformationGroupBox.PerformLayout();
-            this.AboutAppGroupBox.ResumeLayout(false);
-            this.AboutAppGroupBox.PerformLayout();
+            this.AboutAppMaterialCard.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -709,7 +714,6 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialLabel RestTitleLabel;
         private MaterialSkin.Controls.MaterialLabel RestMinutesLabel;
         private System.Windows.Forms.NumericUpDown RestNumericUpDown;
-        private System.Windows.Forms.GroupBox AboutAppGroupBox;
         private MaterialSkin.Controls.MaterialLabel AboutTitleLabel;
         private MaterialSkin.Controls.MaterialLabel DescriptionAppLabel;
         private MaterialSkin.Controls.MaterialButton DetailedInformationButton;
@@ -723,6 +727,7 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialCard ColorThemeMaterialCard;
         private MaterialSkin.Controls.MaterialCard WorkMinutesMaterialCard;
         private MaterialSkin.Controls.MaterialCard RestMinutesMaterialCard;
+        private MaterialSkin.Controls.MaterialCard AboutAppMaterialCard;
     }
 }
 
