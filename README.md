@@ -9,10 +9,10 @@ Detailed information: [The Pomodoro Technique](https://lifehacker.com/productivi
 - Windows Forms platform;
 - .NET Framework 4.8;
 - Library for design [MaterialSkin.2](https://github.com/leocb/MaterialSkin).
-## Screenshots (preview)
+## Screenshots
 ### Main
 ![Main](https://user-images.githubusercontent.com/47049219/132279884-771beb0b-1fa4-41e7-b0b8-8d91061b1b98.png)
 ### Settings
-![Settings](https://user-images.githubusercontent.com/47049219/132279979-45c3c7b2-323b-47a9-a261-e95db357753d.png)
+![Settings](https://user-images.githubusercontent.com/47049219/136215034-561c7cea-d17a-47e6-a964-c5143d90ef1f.png)
 ### About
-![About](https://user-images.githubusercontent.com/47049219/132280001-91706611-22aa-4b47-9f02-d10666a773c4.png)
+![About](https://user-images.githubusercontent.com/47049219/136215119-71db0a8a-18a1-4aeb-a424-de830b1ba9ca.png)
