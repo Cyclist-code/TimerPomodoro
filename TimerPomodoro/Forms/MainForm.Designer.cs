@@ -35,7 +35,7 @@ namespace TimerPomodoro
             this.HomeTabPage = new System.Windows.Forms.TabPage();
             this.StopButton = new MaterialSkin.Controls.MaterialButton();
             this.StartButton = new MaterialSkin.Controls.MaterialButton();
-            this.TimerLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.MinutesLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SettingsTabPage = new System.Windows.Forms.TabPage();
             this.RestMinutesMaterialCard = new MaterialSkin.Controls.MaterialCard();
             this.RestMinutesLabel = new MaterialSkin.Controls.MaterialLabel();
@@ -69,6 +69,8 @@ namespace TimerPomodoro
             this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
             this.Countdown = new System.Windows.Forms.Timer(this.components);
+            this.ColonLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.SecondsLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
@@ -102,9 +104,11 @@ namespace TimerPomodoro
             // HomeTabPage
             // 
             this.HomeTabPage.BackColor = System.Drawing.Color.White;
+            this.HomeTabPage.Controls.Add(this.SecondsLabel);
+            this.HomeTabPage.Controls.Add(this.ColonLabel);
             this.HomeTabPage.Controls.Add(this.StopButton);
             this.HomeTabPage.Controls.Add(this.StartButton);
-            this.HomeTabPage.Controls.Add(this.TimerLabel);
+            this.HomeTabPage.Controls.Add(this.MinutesLabel);
             this.HomeTabPage.ImageKey = "home.png";
             this.HomeTabPage.Location = new System.Drawing.Point(4, 39);
             this.HomeTabPage.Name = "HomeTabPage";
@@ -153,18 +157,18 @@ namespace TimerPomodoro
             this.StartButton.UseVisualStyleBackColor = true;
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
-            // TimerLabel
+            // MinutesLabel
             // 
-            this.TimerLabel.AutoSize = true;
-            this.TimerLabel.Depth = 0;
-            this.TimerLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.TimerLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
-            this.TimerLabel.Location = new System.Drawing.Point(152, 86);
-            this.TimerLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(233, 115);
-            this.TimerLabel.TabIndex = 0;
-            this.TimerLabel.Text = "25:00";
+            this.MinutesLabel.AutoSize = true;
+            this.MinutesLabel.Depth = 0;
+            this.MinutesLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.MinutesLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
+            this.MinutesLabel.Location = new System.Drawing.Point(152, 86);
+            this.MinutesLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.MinutesLabel.Name = "MinutesLabel";
+            this.MinutesLabel.Size = new System.Drawing.Size(107, 115);
+            this.MinutesLabel.TabIndex = 0;
+            this.MinutesLabel.Text = "25";
             // 
             // SettingsTabPage
             // 
@@ -664,6 +668,32 @@ namespace TimerPomodoro
             this.Countdown.Interval = 1000;
             this.Countdown.Tick += new System.EventHandler(this.Countdown_Tick);
             // 
+            // ColonLabel
+            // 
+            this.ColonLabel.AutoSize = true;
+            this.ColonLabel.Depth = 0;
+            this.ColonLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ColonLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
+            this.ColonLabel.Location = new System.Drawing.Point(259, 86);
+            this.ColonLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ColonLabel.Name = "ColonLabel";
+            this.ColonLabel.Size = new System.Drawing.Size(21, 115);
+            this.ColonLabel.TabIndex = 3;
+            this.ColonLabel.Text = ":";
+            // 
+            // SecondsLabel
+            // 
+            this.SecondsLabel.AutoSize = true;
+            this.SecondsLabel.Depth = 0;
+            this.SecondsLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.SecondsLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
+            this.SecondsLabel.Location = new System.Drawing.Point(286, 86);
+            this.SecondsLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SecondsLabel.Name = "SecondsLabel";
+            this.SecondsLabel.Size = new System.Drawing.Size(107, 115);
+            this.SecondsLabel.TabIndex = 4;
+            this.SecondsLabel.Text = "00";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -708,7 +738,7 @@ namespace TimerPomodoro
         private System.Windows.Forms.TabPage SettingsTabPage;
         private System.Windows.Forms.ImageList SideMenuImageList;
         private System.Windows.Forms.TabPage AboutTabPage;
-        private MaterialSkin.Controls.MaterialLabel TimerLabel;
+        private MaterialSkin.Controls.MaterialLabel MinutesLabel;
         private MaterialSkin.Controls.MaterialButton StartButton;
         private MaterialSkin.Controls.MaterialButton StopButton;
         private MaterialSkin.Controls.MaterialLabel ThemeLabel;
@@ -741,6 +771,8 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialCard AboutAppMaterialCard;
         private MaterialSkin.Controls.MaterialCard InformationMaterialCard;
         private System.Windows.Forms.Timer Countdown;
+        private MaterialSkin.Controls.MaterialLabel SecondsLabel;
+        private MaterialSkin.Controls.MaterialLabel ColonLabel;
     }
 }
 

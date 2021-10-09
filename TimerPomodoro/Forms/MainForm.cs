@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -28,6 +21,8 @@ namespace TimerPomodoro
             AppFormSettings.InstallingDefaultTheme(this, DarkThemeSwitch, PurpleRadioButton, GreenRadioButton,
                BlueRadioButton, OrangeRadioButton);
             #endregion
+
+            minutes = Convert.ToInt32(WorkNumericUpDown.Value);
         }
 
         #region Choosing a color scheme for the application
@@ -63,7 +58,6 @@ namespace TimerPomodoro
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            minutes = Convert.ToInt32(WorkNumericUpDown.Value);
             Countdown.Start();
         }
 
@@ -73,6 +67,7 @@ namespace TimerPomodoro
         }
         #endregion
 
+        #region Method for displaying the countdown
         private void Countdown_Tick(object sender, EventArgs e)
         {
             seconds = seconds - 1;
@@ -82,8 +77,16 @@ namespace TimerPomodoro
                 seconds = 59;
             }
 
-            TimerLabel.Text = Convert.ToString(minutes);
+            if (minutes == 0 && seconds == 0)
+            {
+                Countdown.Stop();
+                MessageBox.Show("It's time to rest!", "Rest", MessageBoxButtons.OK);
+            }
+
+            MinutesLabel.Text = Convert.ToString(minutes);
+            SecondsLabel.Text = Convert.ToString(seconds);
         }
+        #endregion
 
         #region Choosing a dark theme
         private void DarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
