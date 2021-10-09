@@ -117,11 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DescriptionAppLabel.Text" xml:space="preserve">
-    <value>Pomodoro is a method of scheduling time to increase productivity. The 
-main idea is to work in short steps: 25 minutes of work, then a five minute break. During breaks - a complete change of activity. This 
-algorithm must be repeated four times, that is, "eat four tomatoes". And then - a long break to rest.</value>
-  </data>
   <metadata name="SideMenuImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -228,6 +223,11 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
         AQcB/wHwAX8B/gEPAfABAwHAAQ8EAAH/AfABDwH/AfgBHwH4AR8B+AEjAcQBHwQAAf8B/AE/Af8B/AIA
         AT8B/wHxAY8B/wQAAf8B/gF/Av8CAAL/AfABDwH/BAAF/wHAAQMC/wHwAQ8B/wQACw==
 </value>
+  </data>
+  <data name="DescriptionAppLabel.Text" xml:space="preserve">
+    <value>Pomodoro is a method of scheduling time to increase productivity. The 
+main idea is to work in short steps: 25 minutes of work, then a five minute break. During breaks - a complete change of activity. This 
+algorithm must be repeated four times, that is, "eat four tomatoes". And then - a long break to rest.</value>
   </data>
   <metadata name="Countdown.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>176, 17</value>

@@ -16,6 +16,10 @@ namespace TimerPomodoro
 {
     public partial class MainForm : MaterialForm
     {
+        #region Global variables 
+        int minutes, seconds;
+        #endregion
+
         public MainForm()
         {
             InitializeComponent();
@@ -56,7 +60,30 @@ namespace TimerPomodoro
                 }
             }
         }
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            minutes = Convert.ToInt32(WorkNumericUpDown.Value);
+            Countdown.Start();
+        }
+
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            Countdown.Stop();
+        }
         #endregion
+
+        private void Countdown_Tick(object sender, EventArgs e)
+        {
+            seconds = seconds - 1;
+            if (seconds == -1)
+            {
+                minutes = minutes - 1;
+                seconds = 59;
+            }
+
+            TimerLabel.Text = Convert.ToString(minutes);
+        }
 
         #region Choosing a dark theme
         private void DarkThemeSwitch_CheckedChanged(object sender, EventArgs e)

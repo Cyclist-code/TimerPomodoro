@@ -131,6 +131,7 @@ namespace TimerPomodoro
             this.StopButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.StopButton.UseAccentColor = false;
             this.StopButton.UseVisualStyleBackColor = true;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // StartButton
             // 
@@ -150,6 +151,7 @@ namespace TimerPomodoro
             this.StartButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.StartButton.UseAccentColor = false;
             this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // TimerLabel
             // 
@@ -660,6 +662,7 @@ namespace TimerPomodoro
             // Countdown
             // 
             this.Countdown.Interval = 1000;
+            this.Countdown.Tick += new System.EventHandler(this.Countdown_Tick);
             // 
             // MainForm
             // 
