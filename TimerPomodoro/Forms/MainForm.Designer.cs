@@ -58,16 +58,17 @@ namespace TimerPomodoro
             this.DelimiterPanel = new System.Windows.Forms.Panel();
             this.DesignTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.AboutTabPage = new System.Windows.Forms.TabPage();
+            this.InformationTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.InformationMaterialCard = new MaterialSkin.Controls.MaterialCard();
+            this.GitHubProfileButton = new MaterialSkin.Controls.MaterialButton();
+            this.DocumentationButton = new MaterialSkin.Controls.MaterialButton();
+            this.EmailDeveloperButton = new MaterialSkin.Controls.MaterialButton();
             this.AboutAppMaterialCard = new MaterialSkin.Controls.MaterialCard();
             this.DetailedInformationButton = new MaterialSkin.Controls.MaterialButton();
             this.DescriptionAppLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.EmailDeveloperButton = new MaterialSkin.Controls.MaterialButton();
-            this.DocumentationButton = new MaterialSkin.Controls.MaterialButton();
-            this.GitHubProfileButton = new MaterialSkin.Controls.MaterialButton();
-            this.InformationTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
-            this.InformationMaterialCard = new MaterialSkin.Controls.MaterialCard();
+            this.Countdown = new System.Windows.Forms.Timer(this.components);
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
@@ -78,8 +79,8 @@ namespace TimerPomodoro
             this.ColorThemeMaterialCard.SuspendLayout();
             this.DarkThemeMaterialCard.SuspendLayout();
             this.AboutTabPage.SuspendLayout();
-            this.AboutAppMaterialCard.SuspendLayout();
             this.InformationMaterialCard.SuspendLayout();
+            this.AboutAppMaterialCard.SuspendLayout();
             this.SuspendLayout();
             // 
             // SideMenuTabControl
@@ -502,6 +503,94 @@ namespace TimerPomodoro
             this.AboutTabPage.TabIndex = 2;
             this.AboutTabPage.Text = "About";
             // 
+            // InformationTitleLabel
+            // 
+            this.InformationTitleLabel.AutoSize = true;
+            this.InformationTitleLabel.Depth = 0;
+            this.InformationTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.InformationTitleLabel.Location = new System.Drawing.Point(10, 224);
+            this.InformationTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.InformationTitleLabel.Name = "InformationTitleLabel";
+            this.InformationTitleLabel.Size = new System.Drawing.Size(84, 19);
+            this.InformationTitleLabel.TabIndex = 1;
+            this.InformationTitleLabel.Text = "Information";
+            // 
+            // InformationMaterialCard
+            // 
+            this.InformationMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.InformationMaterialCard.Controls.Add(this.GitHubProfileButton);
+            this.InformationMaterialCard.Controls.Add(this.DocumentationButton);
+            this.InformationMaterialCard.Controls.Add(this.EmailDeveloperButton);
+            this.InformationMaterialCard.Depth = 0;
+            this.InformationMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.InformationMaterialCard.Location = new System.Drawing.Point(6, 248);
+            this.InformationMaterialCard.Margin = new System.Windows.Forms.Padding(14);
+            this.InformationMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
+            this.InformationMaterialCard.Name = "InformationMaterialCard";
+            this.InformationMaterialCard.Padding = new System.Windows.Forms.Padding(14);
+            this.InformationMaterialCard.Size = new System.Drawing.Size(450, 75);
+            this.InformationMaterialCard.TabIndex = 5;
+            // 
+            // GitHubProfileButton
+            // 
+            this.GitHubProfileButton.AutoSize = false;
+            this.GitHubProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.GitHubProfileButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.GitHubProfileButton.Depth = 0;
+            this.GitHubProfileButton.HighEmphasis = true;
+            this.GitHubProfileButton.Icon = null;
+            this.GitHubProfileButton.Location = new System.Drawing.Point(7, 17);
+            this.GitHubProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.GitHubProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GitHubProfileButton.Name = "GitHubProfileButton";
+            this.GitHubProfileButton.Size = new System.Drawing.Size(140, 40);
+            this.GitHubProfileButton.TabIndex = 2;
+            this.GitHubProfileButton.Text = "GitHub";
+            this.GitHubProfileButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.GitHubProfileButton.UseAccentColor = false;
+            this.GitHubProfileButton.UseVisualStyleBackColor = true;
+            this.GitHubProfileButton.Click += new System.EventHandler(this.ButtonClickHandler);
+            // 
+            // DocumentationButton
+            // 
+            this.DocumentationButton.AutoSize = false;
+            this.DocumentationButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.DocumentationButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.DocumentationButton.Depth = 0;
+            this.DocumentationButton.HighEmphasis = true;
+            this.DocumentationButton.Icon = null;
+            this.DocumentationButton.Location = new System.Drawing.Point(303, 17);
+            this.DocumentationButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.DocumentationButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DocumentationButton.Name = "DocumentationButton";
+            this.DocumentationButton.Size = new System.Drawing.Size(140, 40);
+            this.DocumentationButton.TabIndex = 4;
+            this.DocumentationButton.Text = "Documentation";
+            this.DocumentationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.DocumentationButton.UseAccentColor = false;
+            this.DocumentationButton.UseVisualStyleBackColor = true;
+            this.DocumentationButton.Click += new System.EventHandler(this.ButtonClickHandler);
+            // 
+            // EmailDeveloperButton
+            // 
+            this.EmailDeveloperButton.AutoSize = false;
+            this.EmailDeveloperButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.EmailDeveloperButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.EmailDeveloperButton.Depth = 0;
+            this.EmailDeveloperButton.HighEmphasis = true;
+            this.EmailDeveloperButton.Icon = null;
+            this.EmailDeveloperButton.Location = new System.Drawing.Point(155, 17);
+            this.EmailDeveloperButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.EmailDeveloperButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.EmailDeveloperButton.Name = "EmailDeveloperButton";
+            this.EmailDeveloperButton.Size = new System.Drawing.Size(140, 40);
+            this.EmailDeveloperButton.TabIndex = 3;
+            this.EmailDeveloperButton.Text = "Email";
+            this.EmailDeveloperButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.EmailDeveloperButton.UseAccentColor = false;
+            this.EmailDeveloperButton.UseVisualStyleBackColor = true;
+            this.EmailDeveloperButton.Click += new System.EventHandler(this.ButtonClickHandler);
+            // 
             // AboutAppMaterialCard
             // 
             this.AboutAppMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -548,78 +637,6 @@ namespace TimerPomodoro
             this.DescriptionAppLabel.TabIndex = 2;
             this.DescriptionAppLabel.Text = resources.GetString("DescriptionAppLabel.Text");
             // 
-            // EmailDeveloperButton
-            // 
-            this.EmailDeveloperButton.AutoSize = false;
-            this.EmailDeveloperButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.EmailDeveloperButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.EmailDeveloperButton.Depth = 0;
-            this.EmailDeveloperButton.HighEmphasis = true;
-            this.EmailDeveloperButton.Icon = null;
-            this.EmailDeveloperButton.Location = new System.Drawing.Point(155, 17);
-            this.EmailDeveloperButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.EmailDeveloperButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.EmailDeveloperButton.Name = "EmailDeveloperButton";
-            this.EmailDeveloperButton.Size = new System.Drawing.Size(140, 40);
-            this.EmailDeveloperButton.TabIndex = 3;
-            this.EmailDeveloperButton.Text = "Email";
-            this.EmailDeveloperButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.EmailDeveloperButton.UseAccentColor = false;
-            this.EmailDeveloperButton.UseVisualStyleBackColor = true;
-            this.EmailDeveloperButton.Click += new System.EventHandler(this.ButtonClickHandler);
-            // 
-            // DocumentationButton
-            // 
-            this.DocumentationButton.AutoSize = false;
-            this.DocumentationButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.DocumentationButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.DocumentationButton.Depth = 0;
-            this.DocumentationButton.HighEmphasis = true;
-            this.DocumentationButton.Icon = null;
-            this.DocumentationButton.Location = new System.Drawing.Point(303, 17);
-            this.DocumentationButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.DocumentationButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.DocumentationButton.Name = "DocumentationButton";
-            this.DocumentationButton.Size = new System.Drawing.Size(140, 40);
-            this.DocumentationButton.TabIndex = 4;
-            this.DocumentationButton.Text = "Documentation";
-            this.DocumentationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.DocumentationButton.UseAccentColor = false;
-            this.DocumentationButton.UseVisualStyleBackColor = true;
-            this.DocumentationButton.Click += new System.EventHandler(this.ButtonClickHandler);
-            // 
-            // GitHubProfileButton
-            // 
-            this.GitHubProfileButton.AutoSize = false;
-            this.GitHubProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.GitHubProfileButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.GitHubProfileButton.Depth = 0;
-            this.GitHubProfileButton.HighEmphasis = true;
-            this.GitHubProfileButton.Icon = null;
-            this.GitHubProfileButton.Location = new System.Drawing.Point(7, 17);
-            this.GitHubProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.GitHubProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.GitHubProfileButton.Name = "GitHubProfileButton";
-            this.GitHubProfileButton.Size = new System.Drawing.Size(140, 40);
-            this.GitHubProfileButton.TabIndex = 2;
-            this.GitHubProfileButton.Text = "GitHub";
-            this.GitHubProfileButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.GitHubProfileButton.UseAccentColor = false;
-            this.GitHubProfileButton.UseVisualStyleBackColor = true;
-            this.GitHubProfileButton.Click += new System.EventHandler(this.ButtonClickHandler);
-            // 
-            // InformationTitleLabel
-            // 
-            this.InformationTitleLabel.AutoSize = true;
-            this.InformationTitleLabel.Depth = 0;
-            this.InformationTitleLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.InformationTitleLabel.Location = new System.Drawing.Point(10, 224);
-            this.InformationTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.InformationTitleLabel.Name = "InformationTitleLabel";
-            this.InformationTitleLabel.Size = new System.Drawing.Size(84, 19);
-            this.InformationTitleLabel.TabIndex = 1;
-            this.InformationTitleLabel.Text = "Information";
-            // 
             // AboutTitleLabel
             // 
             this.AboutTitleLabel.AutoSize = true;
@@ -640,21 +657,9 @@ namespace TimerPomodoro
             this.SideMenuImageList.Images.SetKeyName(1, "info.png");
             this.SideMenuImageList.Images.SetKeyName(2, "settings.png");
             // 
-            // InformationMaterialCard
+            // Countdown
             // 
-            this.InformationMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.InformationMaterialCard.Controls.Add(this.GitHubProfileButton);
-            this.InformationMaterialCard.Controls.Add(this.DocumentationButton);
-            this.InformationMaterialCard.Controls.Add(this.EmailDeveloperButton);
-            this.InformationMaterialCard.Depth = 0;
-            this.InformationMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.InformationMaterialCard.Location = new System.Drawing.Point(6, 248);
-            this.InformationMaterialCard.Margin = new System.Windows.Forms.Padding(14);
-            this.InformationMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
-            this.InformationMaterialCard.Name = "InformationMaterialCard";
-            this.InformationMaterialCard.Padding = new System.Windows.Forms.Padding(14);
-            this.InformationMaterialCard.Size = new System.Drawing.Size(450, 75);
-            this.InformationMaterialCard.TabIndex = 5;
+            this.Countdown.Interval = 1000;
             // 
             // MainForm
             // 
@@ -687,8 +692,8 @@ namespace TimerPomodoro
             this.DarkThemeMaterialCard.PerformLayout();
             this.AboutTabPage.ResumeLayout(false);
             this.AboutTabPage.PerformLayout();
-            this.AboutAppMaterialCard.ResumeLayout(false);
             this.InformationMaterialCard.ResumeLayout(false);
+            this.AboutAppMaterialCard.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -732,6 +737,7 @@ namespace TimerPomodoro
         private MaterialSkin.Controls.MaterialCard RestMinutesMaterialCard;
         private MaterialSkin.Controls.MaterialCard AboutAppMaterialCard;
         private MaterialSkin.Controls.MaterialCard InformationMaterialCard;
+        private System.Windows.Forms.Timer Countdown;
     }
 }
 
