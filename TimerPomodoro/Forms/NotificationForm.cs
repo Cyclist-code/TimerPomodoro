@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +12,14 @@ using System.Windows.Forms;
 
 namespace TimerPomodoro.Forms
 {
-    public partial class NotificationForm : Form
+    public partial class NotificationForm : MaterialForm
     {
         public NotificationForm()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
         }
     }
 }
