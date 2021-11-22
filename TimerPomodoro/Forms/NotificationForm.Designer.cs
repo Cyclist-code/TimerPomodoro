@@ -73,6 +73,7 @@ namespace TimerPomodoro.Forms
             this.CloseNotificationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.CloseNotificationButton.UseAccentColor = false;
             this.CloseNotificationButton.UseVisualStyleBackColor = true;
+            this.CloseNotificationButton.Click += new System.EventHandler(this.CloseNotificationButton_Click);
             // 
             // NotificationForm
             // 

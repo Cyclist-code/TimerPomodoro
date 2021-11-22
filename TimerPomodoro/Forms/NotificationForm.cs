@@ -21,5 +21,12 @@ namespace TimerPomodoro.Forms
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
         }
+
+        #region Close the notification window
+        private void CloseNotificationButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        #endregion
     }
 }
