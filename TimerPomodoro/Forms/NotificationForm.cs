@@ -12,6 +12,12 @@ using System.Windows.Forms;
 
 namespace TimerPomodoro.Forms
 {
+    public enum IconNotification
+    {
+        Rest,
+        Work
+    }
+
     public partial class NotificationForm : MaterialForm
     {
         public NotificationForm()
