@@ -20,9 +20,11 @@ namespace TimerPomodoro.Forms
 
     public partial class NotificationForm : MaterialForm
     {
-        public NotificationForm()
+        public NotificationForm(string message, IconNotification icon)
         {
             InitializeComponent();
+
+            ShowNotification(message, icon);
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
