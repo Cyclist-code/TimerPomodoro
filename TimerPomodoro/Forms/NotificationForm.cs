@@ -28,6 +28,23 @@ namespace TimerPomodoro.Forms
             materialSkinManager.AddFormToManage(this);
         }
 
+        #region Method for displaying text and notification icons
+        private void ShowNotification(string message, IconNotification icon)
+        {
+            MessageLabel.Text = message;
+
+            switch (icon)
+            {
+                case IconNotification.Rest:
+                    WorkRestImage.Image = Properties.Resources.rest;
+                    break;
+                case IconNotification.Work:
+                    WorkRestImage.Image = Properties.Resources.work;
+                    break;
+            }
+        }
+        #endregion
+
         #region Close the notification window
         private void CloseNotificationButton_Click(object sender, EventArgs e)
         {
