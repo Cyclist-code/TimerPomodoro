@@ -83,6 +83,16 @@ namespace TimerPomodoro.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rest {
+            get {
+                object obj = ResourceManager.GetObject("rest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap settings {
             get {
                 object obj = ResourceManager.GetObject("settings", resourceCulture);
@@ -97,6 +107,16 @@ namespace TimerPomodoro.Properties {
             get {
                 object obj = ResourceManager.GetObject("timer", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap work {
+            get {
+                object obj = ResourceManager.GetObject("work", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
