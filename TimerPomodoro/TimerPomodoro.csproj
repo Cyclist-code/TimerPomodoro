@@ -100,8 +100,10 @@
   <ItemGroup>
     <Content Include="Resources\home.png" />
     <Content Include="Resources\info.png" />
+    <Content Include="Resources\rest.png" />
     <Content Include="Resources\settings.png" />
     <Content Include="Resources\timer.ico" />
+    <Content Include="Resources\work.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
