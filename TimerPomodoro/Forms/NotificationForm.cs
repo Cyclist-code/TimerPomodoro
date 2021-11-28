@@ -24,11 +24,25 @@ namespace TimerPomodoro.Forms
         {
             InitializeComponent();
 
-            ShowNotification(message, icon);
-
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
+
+            ShowNotification(message, icon);
+            FormLocation();
         }
+
+        #region Method of positioning the form in the lower right corner of the screen
+        private void FormLocation()
+        {
+            StartPosition = FormStartPosition.Manual;
+            Point point = Screen.PrimaryScreen.WorkingArea.Location;
+            point.Offset(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            point.Offset(-Width, -Height);
+            Location = point;
+
+            TopMost = true;
+        }
+        #endregion
 
         #region Method for displaying text and notification icons
         private void ShowNotification(string message, IconNotification icon)
