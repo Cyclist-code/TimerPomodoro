@@ -52,9 +52,8 @@ namespace TimerPomodoro.Forms
             this.MessageLabel.Location = new System.Drawing.Point(92, 75);
             this.MessageLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.MessageLabel.Name = "MessageLabel";
-            this.MessageLabel.Size = new System.Drawing.Size(252, 19);
+            this.MessageLabel.Size = new System.Drawing.Size(1, 0);
             this.MessageLabel.TabIndex = 1;
-            this.MessageLabel.Text = "Time is over! Time to get some rest.";
             // 
             // CloseNotificationButton
             // 
