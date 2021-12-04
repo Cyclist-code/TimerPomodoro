@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using TimerPomodoro.Services;
+using TimerPomodoro.Forms;
 
 namespace TimerPomodoro
 {
@@ -11,6 +12,7 @@ namespace TimerPomodoro
     {
         #region Global variables 
         int minutes, seconds;
+        bool isRested = false;
         #endregion
 
         public MainForm()
@@ -80,7 +82,18 @@ namespace TimerPomodoro
             if (minutes == 0 && seconds == 0)
             {
                 Countdown.Stop();
-                MessageBox.Show("It's time to rest!", "Rest", MessageBoxButtons.OK);
+                if (!isRested)
+                {
+                    NotificationForm notificationForm = new NotificationForm("Time is over! Time to get some rest.", IconNotification.Rest);
+                    minutes = Convert.ToInt32(WorkNumericUpDown.Value);
+                    isRested = true;
+                }
+                else
+                {
+                    NotificationForm notificationForm = new NotificationForm("It's time to get back to work.", IconNotification.Work);
+                    minutes = Convert.ToInt32(RestNumericUpDown.Value);
+                    isRested = false;
+                }
             }
 
             MinutesLabel.Text = Convert.ToString(minutes);
