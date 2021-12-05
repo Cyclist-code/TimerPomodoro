@@ -41,6 +41,7 @@ namespace TimerPomodoro.Forms
             this.WorkRestImage.Location = new System.Drawing.Point(16, 50);
             this.WorkRestImage.Name = "WorkRestImage";
             this.WorkRestImage.Size = new System.Drawing.Size(70, 70);
+            this.WorkRestImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.WorkRestImage.TabIndex = 0;
             this.WorkRestImage.TabStop = false;
             // 
