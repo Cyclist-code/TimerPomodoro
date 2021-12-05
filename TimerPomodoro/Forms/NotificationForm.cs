@@ -20,14 +20,13 @@ namespace TimerPomodoro.Forms
 
     public partial class NotificationForm : MaterialForm
     {
-        public NotificationForm(string message, IconNotification icon)
+        public NotificationForm()
         {
             InitializeComponent();
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
 
-            ShowNotification(message, icon);
             FormLocation();
         }
 
@@ -45,7 +44,7 @@ namespace TimerPomodoro.Forms
         #endregion
 
         #region Method for displaying text and notification icons
-        private void ShowNotification(string message, IconNotification icon)
+        public void ShowNotification(string message, IconNotification icon)
         {
             MessageLabel.Text = message;
 
@@ -58,6 +57,8 @@ namespace TimerPomodoro.Forms
                     WorkRestImage.Image = Properties.Resources.work;
                     break;
             }
+
+            ShowDialog();
         }
         #endregion
 

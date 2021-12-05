@@ -13,6 +13,8 @@ namespace TimerPomodoro
         #region Global variables 
         int minutes, seconds;
         bool isRested = false;
+
+        readonly NotificationForm notificationForm = new NotificationForm();
         #endregion
 
         public MainForm()
@@ -84,13 +86,13 @@ namespace TimerPomodoro
                 Countdown.Stop();
                 if (!isRested)
                 {
-                    NotificationForm notificationForm = new NotificationForm("Time is over! Time to get some rest.", IconNotification.Rest);
+                    notificationForm.ShowNotification("Time is over! Time to get some rest.", IconNotification.Rest);
                     minutes = Convert.ToInt32(WorkNumericUpDown.Value);
                     isRested = true;
                 }
                 else
                 {
-                    NotificationForm notificationForm = new NotificationForm("It's time to get back to work.", IconNotification.Work);
+                    notificationForm.ShowNotification("It's time to get back to work.", IconNotification.Work);
                     minutes = Convert.ToInt32(RestNumericUpDown.Value);
                     isRested = false;
                 }
