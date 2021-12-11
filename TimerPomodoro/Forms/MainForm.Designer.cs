@@ -33,6 +33,8 @@ namespace TimerPomodoro
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.SideMenuTabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.HomeTabPage = new System.Windows.Forms.TabPage();
+            this.SecondsLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ColonLabel = new MaterialSkin.Controls.MaterialLabel();
             this.StopButton = new MaterialSkin.Controls.MaterialButton();
             this.StartButton = new MaterialSkin.Controls.MaterialButton();
             this.MinutesLabel = new MaterialSkin.Controls.MaterialLabel();
@@ -69,8 +71,6 @@ namespace TimerPomodoro
             this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
             this.Countdown = new System.Windows.Forms.Timer(this.components);
-            this.ColonLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.SecondsLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
@@ -116,6 +116,32 @@ namespace TimerPomodoro
             this.HomeTabPage.Size = new System.Drawing.Size(586, 340);
             this.HomeTabPage.TabIndex = 0;
             this.HomeTabPage.Text = "Home";
+            // 
+            // SecondsLabel
+            // 
+            this.SecondsLabel.AutoSize = true;
+            this.SecondsLabel.Depth = 0;
+            this.SecondsLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.SecondsLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
+            this.SecondsLabel.Location = new System.Drawing.Point(286, 86);
+            this.SecondsLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SecondsLabel.Name = "SecondsLabel";
+            this.SecondsLabel.Size = new System.Drawing.Size(107, 115);
+            this.SecondsLabel.TabIndex = 4;
+            this.SecondsLabel.Text = "00";
+            // 
+            // ColonLabel
+            // 
+            this.ColonLabel.AutoSize = true;
+            this.ColonLabel.Depth = 0;
+            this.ColonLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ColonLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
+            this.ColonLabel.Location = new System.Drawing.Point(259, 86);
+            this.ColonLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ColonLabel.Name = "ColonLabel";
+            this.ColonLabel.Size = new System.Drawing.Size(21, 115);
+            this.ColonLabel.TabIndex = 3;
+            this.ColonLabel.Text = ":";
             // 
             // StopButton
             // 
@@ -320,6 +346,7 @@ namespace TimerPomodoro
             0,
             0,
             0});
+            this.WorkNumericUpDown.ValueChanged += new System.EventHandler(this.WorkNumericUpDown_ValueChanged);
             // 
             // ColorThemeMaterialCard
             // 
@@ -667,32 +694,6 @@ namespace TimerPomodoro
             // 
             this.Countdown.Interval = 1000;
             this.Countdown.Tick += new System.EventHandler(this.Countdown_Tick);
-            // 
-            // ColonLabel
-            // 
-            this.ColonLabel.AutoSize = true;
-            this.ColonLabel.Depth = 0;
-            this.ColonLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ColonLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
-            this.ColonLabel.Location = new System.Drawing.Point(259, 86);
-            this.ColonLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ColonLabel.Name = "ColonLabel";
-            this.ColonLabel.Size = new System.Drawing.Size(21, 115);
-            this.ColonLabel.TabIndex = 3;
-            this.ColonLabel.Text = ":";
-            // 
-            // SecondsLabel
-            // 
-            this.SecondsLabel.AutoSize = true;
-            this.SecondsLabel.Depth = 0;
-            this.SecondsLabel.Font = new System.Drawing.Font("Roboto Light", 96F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.SecondsLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H1;
-            this.SecondsLabel.Location = new System.Drawing.Point(286, 86);
-            this.SecondsLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.SecondsLabel.Name = "SecondsLabel";
-            this.SecondsLabel.Size = new System.Drawing.Size(107, 115);
-            this.SecondsLabel.TabIndex = 4;
-            this.SecondsLabel.Text = "00";
             // 
             // MainForm
             // 

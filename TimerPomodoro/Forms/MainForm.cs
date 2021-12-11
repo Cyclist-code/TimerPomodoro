@@ -101,6 +101,12 @@ namespace TimerPomodoro
             MinutesLabel.Text = Convert.ToString(minutes);
             SecondsLabel.Text = Convert.ToString(seconds);
         }
+
+        private void WorkNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            minutes = Convert.ToInt32(WorkNumericUpDown.Value);
+            MinutesLabel.Text = Convert.ToString(minutes);
+        }
         #endregion
 
         #region Choosing a dark theme
