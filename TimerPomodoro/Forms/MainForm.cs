@@ -53,7 +53,7 @@ namespace TimerPomodoro
                         Clipboard.SetText("cyclistcode@gmail.com");
                         break;
                     case "DocumentationButton":
-                        Process.Start("https://github.com/Cyclist-code/TimerPomodoro/blob/main/README.md");
+                        Process.Start("https://github.com/Cyclist-code/TimerPomodoro/blob/main/Documentation.md");
                         break;
 
                 }
