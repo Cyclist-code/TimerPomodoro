@@ -71,6 +71,9 @@ namespace TimerPomodoro
             this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
             this.Countdown = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.LanguageTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.LanguageSelectionComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
@@ -199,6 +202,9 @@ namespace TimerPomodoro
             // SettingsTabPage
             // 
             this.SettingsTabPage.BackColor = System.Drawing.Color.White;
+            this.SettingsTabPage.Controls.Add(this.LanguageSelectionComboBox);
+            this.SettingsTabPage.Controls.Add(this.LanguageTitleLabel);
+            this.SettingsTabPage.Controls.Add(this.panel1);
             this.SettingsTabPage.Controls.Add(this.RestMinutesMaterialCard);
             this.SettingsTabPage.Controls.Add(this.RestTitleLabel);
             this.SettingsTabPage.Controls.Add(this.WorkTitleLabel);
@@ -695,6 +701,51 @@ namespace TimerPomodoro
             this.Countdown.Interval = 1000;
             this.Countdown.Tick += new System.EventHandler(this.Countdown_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(6, 270);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(525, 1);
+            this.panel1.TabIndex = 5;
+            // 
+            // LanguageTitleLabel
+            // 
+            this.LanguageTitleLabel.AutoSize = true;
+            this.LanguageTitleLabel.Depth = 0;
+            this.LanguageTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.LanguageTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.LanguageTitleLabel.Location = new System.Drawing.Point(13, 284);
+            this.LanguageTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LanguageTitleLabel.Name = "LanguageTitleLabel";
+            this.LanguageTitleLabel.Size = new System.Drawing.Size(89, 24);
+            this.LanguageTitleLabel.TabIndex = 14;
+            this.LanguageTitleLabel.Text = "Language";
+            // 
+            // LanguageSelectionComboBox
+            // 
+            this.LanguageSelectionComboBox.AutoResize = false;
+            this.LanguageSelectionComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.LanguageSelectionComboBox.Depth = 0;
+            this.LanguageSelectionComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.LanguageSelectionComboBox.DropDownHeight = 118;
+            this.LanguageSelectionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LanguageSelectionComboBox.DropDownWidth = 121;
+            this.LanguageSelectionComboBox.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.LanguageSelectionComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LanguageSelectionComboBox.FormattingEnabled = true;
+            this.LanguageSelectionComboBox.IntegralHeight = false;
+            this.LanguageSelectionComboBox.ItemHeight = 29;
+            this.LanguageSelectionComboBox.Location = new System.Drawing.Point(12, 316);
+            this.LanguageSelectionComboBox.MaxDropDownItems = 4;
+            this.LanguageSelectionComboBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.LanguageSelectionComboBox.Name = "LanguageSelectionComboBox";
+            this.LanguageSelectionComboBox.Size = new System.Drawing.Size(297, 35);
+            this.LanguageSelectionComboBox.StartIndex = 0;
+            this.LanguageSelectionComboBox.TabIndex = 15;
+            this.LanguageSelectionComboBox.UseAccent = false;
+            this.LanguageSelectionComboBox.UseTallSize = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -774,6 +825,9 @@ namespace TimerPomodoro
         private System.Windows.Forms.Timer Countdown;
         private MaterialSkin.Controls.MaterialLabel SecondsLabel;
         private MaterialSkin.Controls.MaterialLabel ColonLabel;
+        private System.Windows.Forms.Panel panel1;
+        private MaterialSkin.Controls.MaterialLabel LanguageTitleLabel;
+        private MaterialSkin.Controls.MaterialComboBox LanguageSelectionComboBox;
     }
 }
 
