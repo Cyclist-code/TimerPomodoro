@@ -19,8 +19,13 @@ namespace TimerPomodoro
 
         public MainForm()
         {
-            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
-            System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+            #region Loading the saved language in the app
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
+            {
+                System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+                System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+            }
+            #endregion
 
             InitializeComponent();
 
@@ -48,6 +53,7 @@ namespace TimerPomodoro
 
             if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
                 LanguageSelectionComboBox.SelectedValue = Properties.Settings.Default.Language;
+            
         }
         #endregion
 
@@ -128,7 +134,7 @@ namespace TimerPomodoro
         {
             minutes = Convert.ToInt32(WorkNumericUpDown.Value);
             MinutesLabel.Text = Convert.ToString(minutes);
-        }
+        }       
         #endregion
 
         #region Choosing a dark theme
@@ -138,5 +144,12 @@ namespace TimerPomodoro
         }
         #endregion
 
+        #region Saving the selected language when closing the application
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Language = LanguageSelectionComboBox.SelectedValue.ToString();
+            Properties.Settings.Default.Save();
+        }
+        #endregion
     }
 }

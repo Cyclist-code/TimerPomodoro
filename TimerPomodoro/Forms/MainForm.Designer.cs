@@ -90,11 +90,11 @@ namespace TimerPomodoro
             // 
             // SideMenuTabControl
             // 
-            resources.ApplyResources(this.SideMenuTabControl, "SideMenuTabControl");
             this.SideMenuTabControl.Controls.Add(this.HomeTabPage);
             this.SideMenuTabControl.Controls.Add(this.SettingsTabPage);
             this.SideMenuTabControl.Controls.Add(this.AboutTabPage);
             this.SideMenuTabControl.Depth = 0;
+            resources.ApplyResources(this.SideMenuTabControl, "SideMenuTabControl");
             this.SideMenuTabControl.ImageList = this.SideMenuImageList;
             this.SideMenuTabControl.MouseState = MaterialSkin.MouseState.HOVER;
             this.SideMenuTabControl.Multiline = true;
@@ -103,13 +103,13 @@ namespace TimerPomodoro
             // 
             // HomeTabPage
             // 
-            resources.ApplyResources(this.HomeTabPage, "HomeTabPage");
             this.HomeTabPage.BackColor = System.Drawing.Color.White;
             this.HomeTabPage.Controls.Add(this.SecondsLabel);
             this.HomeTabPage.Controls.Add(this.ColonLabel);
             this.HomeTabPage.Controls.Add(this.StopButton);
             this.HomeTabPage.Controls.Add(this.StartButton);
             this.HomeTabPage.Controls.Add(this.MinutesLabel);
+            resources.ApplyResources(this.HomeTabPage, "HomeTabPage");
             this.HomeTabPage.Name = "HomeTabPage";
             // 
             // SecondsLabel
@@ -166,7 +166,6 @@ namespace TimerPomodoro
             // 
             // SettingsTabPage
             // 
-            resources.ApplyResources(this.SettingsTabPage, "SettingsTabPage");
             this.SettingsTabPage.BackColor = System.Drawing.Color.White;
             this.SettingsTabPage.Controls.Add(this.LanguageSelectionComboBox);
             this.SettingsTabPage.Controls.Add(this.LanguageTitleLabel);
@@ -182,11 +181,11 @@ namespace TimerPomodoro
             this.SettingsTabPage.Controls.Add(this.TimerSettingsTitleLabel);
             this.SettingsTabPage.Controls.Add(this.DelimiterPanel);
             this.SettingsTabPage.Controls.Add(this.DesignTitleLabel);
+            resources.ApplyResources(this.SettingsTabPage, "SettingsTabPage");
             this.SettingsTabPage.Name = "SettingsTabPage";
             // 
             // LanguageSelectionComboBox
             // 
-            resources.ApplyResources(this.LanguageSelectionComboBox, "LanguageSelectionComboBox");
             this.LanguageSelectionComboBox.AutoResize = false;
             this.LanguageSelectionComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.LanguageSelectionComboBox.Depth = 0;
@@ -194,6 +193,7 @@ namespace TimerPomodoro
             this.LanguageSelectionComboBox.DropDownHeight = 118;
             this.LanguageSelectionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LanguageSelectionComboBox.DropDownWidth = 121;
+            resources.ApplyResources(this.LanguageSelectionComboBox, "LanguageSelectionComboBox");
             this.LanguageSelectionComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LanguageSelectionComboBox.FormattingEnabled = true;
             this.LanguageSelectionComboBox.MouseState = MaterialSkin.MouseState.OUT;
@@ -212,18 +212,18 @@ namespace TimerPomodoro
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // RestMinutesMaterialCard
             // 
-            resources.ApplyResources(this.RestMinutesMaterialCard, "RestMinutesMaterialCard");
             this.RestMinutesMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RestMinutesMaterialCard.Controls.Add(this.RestMinutesLabel);
             this.RestMinutesMaterialCard.Controls.Add(this.RestNumericUpDown);
             this.RestMinutesMaterialCard.Depth = 0;
             this.RestMinutesMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.RestMinutesMaterialCard, "RestMinutesMaterialCard");
             this.RestMinutesMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
             this.RestMinutesMaterialCard.Name = "RestMinutesMaterialCard";
             // 
@@ -270,12 +270,12 @@ namespace TimerPomodoro
             // 
             // WorkMinutesMaterialCard
             // 
-            resources.ApplyResources(this.WorkMinutesMaterialCard, "WorkMinutesMaterialCard");
             this.WorkMinutesMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.WorkMinutesMaterialCard.Controls.Add(this.WorkMinutesLabel);
             this.WorkMinutesMaterialCard.Controls.Add(this.WorkNumericUpDown);
             this.WorkMinutesMaterialCard.Depth = 0;
             this.WorkMinutesMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.WorkMinutesMaterialCard, "WorkMinutesMaterialCard");
             this.WorkMinutesMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
             this.WorkMinutesMaterialCard.Name = "WorkMinutesMaterialCard";
             // 
@@ -314,7 +314,6 @@ namespace TimerPomodoro
             // 
             // ColorThemeMaterialCard
             // 
-            resources.ApplyResources(this.ColorThemeMaterialCard, "ColorThemeMaterialCard");
             this.ColorThemeMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ColorThemeMaterialCard.Controls.Add(this.OrangeRadioButton);
             this.ColorThemeMaterialCard.Controls.Add(this.PurpleRadioButton);
@@ -322,6 +321,7 @@ namespace TimerPomodoro
             this.ColorThemeMaterialCard.Controls.Add(this.GreenRadioButton);
             this.ColorThemeMaterialCard.Depth = 0;
             this.ColorThemeMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.ColorThemeMaterialCard, "ColorThemeMaterialCard");
             this.ColorThemeMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
             this.ColorThemeMaterialCard.Name = "ColorThemeMaterialCard";
             // 
@@ -383,11 +383,11 @@ namespace TimerPomodoro
             // 
             // DarkThemeMaterialCard
             // 
-            resources.ApplyResources(this.DarkThemeMaterialCard, "DarkThemeMaterialCard");
             this.DarkThemeMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.DarkThemeMaterialCard.Controls.Add(this.DarkThemeSwitch);
             this.DarkThemeMaterialCard.Depth = 0;
             this.DarkThemeMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.DarkThemeMaterialCard, "DarkThemeMaterialCard");
             this.DarkThemeMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
             this.DarkThemeMaterialCard.Name = "DarkThemeMaterialCard";
             // 
@@ -419,8 +419,8 @@ namespace TimerPomodoro
             // 
             // DelimiterPanel
             // 
-            resources.ApplyResources(this.DelimiterPanel, "DelimiterPanel");
             this.DelimiterPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.DelimiterPanel, "DelimiterPanel");
             this.DelimiterPanel.Name = "DelimiterPanel";
             // 
             // DesignTitleLabel
@@ -433,12 +433,12 @@ namespace TimerPomodoro
             // 
             // AboutTabPage
             // 
-            resources.ApplyResources(this.AboutTabPage, "AboutTabPage");
             this.AboutTabPage.BackColor = System.Drawing.Color.White;
             this.AboutTabPage.Controls.Add(this.InformationTitleLabel);
             this.AboutTabPage.Controls.Add(this.InformationMaterialCard);
             this.AboutTabPage.Controls.Add(this.AboutAppMaterialCard);
             this.AboutTabPage.Controls.Add(this.AboutTitleLabel);
+            resources.ApplyResources(this.AboutTabPage, "AboutTabPage");
             this.AboutTabPage.Name = "AboutTabPage";
             // 
             // InformationTitleLabel
@@ -450,13 +450,13 @@ namespace TimerPomodoro
             // 
             // InformationMaterialCard
             // 
-            resources.ApplyResources(this.InformationMaterialCard, "InformationMaterialCard");
             this.InformationMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.InformationMaterialCard.Controls.Add(this.GitHubProfileButton);
             this.InformationMaterialCard.Controls.Add(this.DocumentationButton);
             this.InformationMaterialCard.Controls.Add(this.EmailDeveloperButton);
             this.InformationMaterialCard.Depth = 0;
             this.InformationMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.InformationMaterialCard, "InformationMaterialCard");
             this.InformationMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
             this.InformationMaterialCard.Name = "InformationMaterialCard";
             // 
@@ -504,12 +504,12 @@ namespace TimerPomodoro
             // 
             // AboutAppMaterialCard
             // 
-            resources.ApplyResources(this.AboutAppMaterialCard, "AboutAppMaterialCard");
             this.AboutAppMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.AboutAppMaterialCard.Controls.Add(this.DetailedInformationButton);
             this.AboutAppMaterialCard.Controls.Add(this.DescriptionAppLabel);
             this.AboutAppMaterialCard.Depth = 0;
             this.AboutAppMaterialCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.AboutAppMaterialCard, "AboutAppMaterialCard");
             this.AboutAppMaterialCard.MouseState = MaterialSkin.MouseState.HOVER;
             this.AboutAppMaterialCard.Name = "AboutAppMaterialCard";
             // 
@@ -529,8 +529,8 @@ namespace TimerPomodoro
             // 
             // DescriptionAppLabel
             // 
-            resources.ApplyResources(this.DescriptionAppLabel, "DescriptionAppLabel");
             this.DescriptionAppLabel.Depth = 0;
+            resources.ApplyResources(this.DescriptionAppLabel, "DescriptionAppLabel");
             this.DescriptionAppLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.DescriptionAppLabel.Name = "DescriptionAppLabel";
             // 
@@ -564,6 +564,7 @@ namespace TimerPomodoro
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Sizable = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.SideMenuTabControl.ResumeLayout(false);
             this.HomeTabPage.ResumeLayout(false);
             this.HomeTabPage.PerformLayout();
