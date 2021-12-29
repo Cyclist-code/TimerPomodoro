@@ -39,6 +39,9 @@ namespace TimerPomodoro
             this.StartButton = new MaterialSkin.Controls.MaterialButton();
             this.MinutesLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SettingsTabPage = new System.Windows.Forms.TabPage();
+            this.LanguageSelectionComboBox = new MaterialSkin.Controls.MaterialComboBox();
+            this.LanguageTitleLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.RestMinutesMaterialCard = new MaterialSkin.Controls.MaterialCard();
             this.RestMinutesLabel = new MaterialSkin.Controls.MaterialLabel();
             this.RestNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -71,9 +74,6 @@ namespace TimerPomodoro
             this.AboutTitleLabel = new MaterialSkin.Controls.MaterialLabel();
             this.SideMenuImageList = new System.Windows.Forms.ImageList(this.components);
             this.Countdown = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.LanguageTitleLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.LanguageSelectionComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.SideMenuTabControl.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SettingsTabPage.SuspendLayout();
@@ -158,7 +158,7 @@ namespace TimerPomodoro
             this.StopButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.StopButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(140, 40);
+            this.StopButton.Size = new System.Drawing.Size(140, 36);
             this.StopButton.TabIndex = 2;
             this.StopButton.Text = "Stop";
             this.StopButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -178,7 +178,7 @@ namespace TimerPomodoro
             this.StartButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.StartButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(140, 40);
+            this.StartButton.Size = new System.Drawing.Size(140, 36);
             this.StartButton.TabIndex = 1;
             this.StartButton.Text = "Start";
             this.StartButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -224,6 +224,51 @@ namespace TimerPomodoro
             this.SettingsTabPage.TabIndex = 1;
             this.SettingsTabPage.Text = "Settings";
             // 
+            // LanguageSelectionComboBox
+            // 
+            this.LanguageSelectionComboBox.AutoResize = false;
+            this.LanguageSelectionComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.LanguageSelectionComboBox.Depth = 0;
+            this.LanguageSelectionComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.LanguageSelectionComboBox.DropDownHeight = 118;
+            this.LanguageSelectionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LanguageSelectionComboBox.DropDownWidth = 121;
+            this.LanguageSelectionComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.LanguageSelectionComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LanguageSelectionComboBox.FormattingEnabled = true;
+            this.LanguageSelectionComboBox.IntegralHeight = false;
+            this.LanguageSelectionComboBox.ItemHeight = 29;
+            this.LanguageSelectionComboBox.Location = new System.Drawing.Point(12, 316);
+            this.LanguageSelectionComboBox.MaxDropDownItems = 4;
+            this.LanguageSelectionComboBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.LanguageSelectionComboBox.Name = "LanguageSelectionComboBox";
+            this.LanguageSelectionComboBox.Size = new System.Drawing.Size(297, 35);
+            this.LanguageSelectionComboBox.StartIndex = 0;
+            this.LanguageSelectionComboBox.TabIndex = 15;
+            this.LanguageSelectionComboBox.UseAccent = false;
+            this.LanguageSelectionComboBox.UseTallSize = false;
+            // 
+            // LanguageTitleLabel
+            // 
+            this.LanguageTitleLabel.AutoSize = true;
+            this.LanguageTitleLabel.Depth = 0;
+            this.LanguageTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.LanguageTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.LanguageTitleLabel.Location = new System.Drawing.Point(13, 284);
+            this.LanguageTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LanguageTitleLabel.Name = "LanguageTitleLabel";
+            this.LanguageTitleLabel.Size = new System.Drawing.Size(89, 24);
+            this.LanguageTitleLabel.TabIndex = 14;
+            this.LanguageTitleLabel.Text = "Language";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(6, 270);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(525, 1);
+            this.panel1.TabIndex = 5;
+            // 
             // RestMinutesMaterialCard
             // 
             this.RestMinutesMaterialCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -253,7 +298,7 @@ namespace TimerPomodoro
             // 
             // RestNumericUpDown
             // 
-            this.RestNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RestNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.RestNumericUpDown.Location = new System.Drawing.Point(80, 13);
             this.RestNumericUpDown.Maximum = new decimal(new int[] {
             10,
@@ -327,7 +372,7 @@ namespace TimerPomodoro
             // 
             // WorkNumericUpDown
             // 
-            this.WorkNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WorkNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.WorkNumericUpDown.Increment = new decimal(new int[] {
             5,
             0,
@@ -582,7 +627,7 @@ namespace TimerPomodoro
             this.GitHubProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.GitHubProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.GitHubProfileButton.Name = "GitHubProfileButton";
-            this.GitHubProfileButton.Size = new System.Drawing.Size(140, 40);
+            this.GitHubProfileButton.Size = new System.Drawing.Size(140, 36);
             this.GitHubProfileButton.TabIndex = 2;
             this.GitHubProfileButton.Text = "GitHub";
             this.GitHubProfileButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -602,7 +647,7 @@ namespace TimerPomodoro
             this.DocumentationButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.DocumentationButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.DocumentationButton.Name = "DocumentationButton";
-            this.DocumentationButton.Size = new System.Drawing.Size(140, 40);
+            this.DocumentationButton.Size = new System.Drawing.Size(140, 36);
             this.DocumentationButton.TabIndex = 4;
             this.DocumentationButton.Text = "Documentation";
             this.DocumentationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -622,7 +667,7 @@ namespace TimerPomodoro
             this.EmailDeveloperButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.EmailDeveloperButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.EmailDeveloperButton.Name = "EmailDeveloperButton";
-            this.EmailDeveloperButton.Size = new System.Drawing.Size(140, 40);
+            this.EmailDeveloperButton.Size = new System.Drawing.Size(140, 36);
             this.EmailDeveloperButton.TabIndex = 3;
             this.EmailDeveloperButton.Text = "Email";
             this.EmailDeveloperButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -657,7 +702,7 @@ namespace TimerPomodoro
             this.DetailedInformationButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.DetailedInformationButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.DetailedInformationButton.Name = "DetailedInformationButton";
-            this.DetailedInformationButton.Size = new System.Drawing.Size(180, 40);
+            this.DetailedInformationButton.Size = new System.Drawing.Size(180, 36);
             this.DetailedInformationButton.TabIndex = 3;
             this.DetailedInformationButton.Text = "Detailed information";
             this.DetailedInformationButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -700,51 +745,6 @@ namespace TimerPomodoro
             // 
             this.Countdown.Interval = 1000;
             this.Countdown.Tick += new System.EventHandler(this.Countdown_Tick);
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(6, 270);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(525, 1);
-            this.panel1.TabIndex = 5;
-            // 
-            // LanguageTitleLabel
-            // 
-            this.LanguageTitleLabel.AutoSize = true;
-            this.LanguageTitleLabel.Depth = 0;
-            this.LanguageTitleLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.LanguageTitleLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.LanguageTitleLabel.Location = new System.Drawing.Point(13, 284);
-            this.LanguageTitleLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LanguageTitleLabel.Name = "LanguageTitleLabel";
-            this.LanguageTitleLabel.Size = new System.Drawing.Size(89, 24);
-            this.LanguageTitleLabel.TabIndex = 14;
-            this.LanguageTitleLabel.Text = "Language";
-            // 
-            // LanguageSelectionComboBox
-            // 
-            this.LanguageSelectionComboBox.AutoResize = false;
-            this.LanguageSelectionComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.LanguageSelectionComboBox.Depth = 0;
-            this.LanguageSelectionComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.LanguageSelectionComboBox.DropDownHeight = 118;
-            this.LanguageSelectionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.LanguageSelectionComboBox.DropDownWidth = 121;
-            this.LanguageSelectionComboBox.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.LanguageSelectionComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LanguageSelectionComboBox.FormattingEnabled = true;
-            this.LanguageSelectionComboBox.IntegralHeight = false;
-            this.LanguageSelectionComboBox.ItemHeight = 29;
-            this.LanguageSelectionComboBox.Location = new System.Drawing.Point(12, 316);
-            this.LanguageSelectionComboBox.MaxDropDownItems = 4;
-            this.LanguageSelectionComboBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.LanguageSelectionComboBox.Name = "LanguageSelectionComboBox";
-            this.LanguageSelectionComboBox.Size = new System.Drawing.Size(297, 35);
-            this.LanguageSelectionComboBox.StartIndex = 0;
-            this.LanguageSelectionComboBox.TabIndex = 15;
-            this.LanguageSelectionComboBox.UseAccent = false;
-            this.LanguageSelectionComboBox.UseTallSize = false;
             // 
             // MainForm
             // 
