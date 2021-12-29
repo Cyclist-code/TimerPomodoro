@@ -288,9 +288,6 @@
   <data name="&gt;&gt;BlueRadioButton.Parent" xml:space="preserve">
     <value>ColorThemeMaterialCard</value>
   </data>
-  <data name="SettingsTabPage.ImageKey" xml:space="preserve">
-    <value>settings.png</value>
-  </data>
   <data name="&gt;&gt;AboutTitleLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -320,9 +317,6 @@
   </data>
   <data name="&gt;&gt;WorkMinutesMaterialCard.Parent" xml:space="preserve">
     <value>SettingsTabPage</value>
-  </data>
-  <data name="&gt;&gt;AboutTabPage.Parent" xml:space="preserve">
-    <value>SideMenuTabControl</value>
   </data>
   <data name="HomeTabPage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -444,9 +438,6 @@
   <data name="AboutTabPage.Text" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="DocumentationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
-  </data>
   <data name="SecondsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -503,9 +494,6 @@
   </data>
   <data name="&gt;&gt;LanguageTitleLabel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;InformationTitleLabel.Parent" xml:space="preserve">
-    <value>AboutTabPage</value>
   </data>
   <data name="MinutesLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 96px</value>
@@ -602,7 +590,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACs
-        FgAAAk1TRnQBSQFMAgEBAwEAAfABAAH4AQABIAEAASABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAGA
+        FgAAAk1TRnQBSQFMAgEBAwEAAfABAAEYAQEBIAEAASABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAGA
         AwABIAMAAQEBAAEgBgABQLoAAwkBDAM1AVYDTgGYA1sByANYAekDPQH5Az0B+QNYAekDWwHIA04BlwM0
         AVUDCAELWAADBAEFA0gBhgNeAeUDAAH/AwAB/wNeAeUDSAGFAwQBBbwAAwMBBAMoAT0DLAFEAywBRAMs
         AUQDLAFEAywBRAMsAUQDLAFEAykBPgMEAQYQAAMEAQYDKQE+AywBRAMsAUQDLAFEAywBRAMsAUQDLAFE
@@ -785,8 +773,8 @@
   <data name="&gt;&gt;MinutesLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;DarkThemeSwitch.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialSwitch, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;InformationTitleLabel.Parent" xml:space="preserve">
+    <value>AboutTabPage</value>
   </data>
   <data name="&gt;&gt;AboutTitleLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1070,8 +1058,8 @@
   <data name="ColorThemeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;DescriptionAppLabel.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="WorkMinutesMaterialCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 50</value>
   </data>
   <data name="&gt;&gt;LanguageSelectionComboBox.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1126,8 +1114,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;WorkMinutesMaterialCard.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;DocumentationButton.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;AboutTabPage.Parent" xml:space="preserve">
+    <value>SideMenuTabControl</value>
   </data>
   <data name="&gt;&gt;WorkMinutesLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1165,6 +1153,9 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="DetailedInformationButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 120</value>
   </data>
+  <data name="&gt;&gt;RestNumericUpDown.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;ThemeLabel.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
@@ -1177,9 +1168,6 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="AboutTabPage.ImageKey" xml:space="preserve">
     <value>info.png</value>
   </data>
-  <data name="&gt;&gt;ColonLabel.Name" xml:space="preserve">
-    <value>ColonLabel</value>
-  </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -1191,6 +1179,9 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   </data>
   <data name="&gt;&gt;OrangeRadioButton.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="DesignTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20px, style=Bold</value>
   </data>
   <data name="&gt;&gt;RestNumericUpDown.Parent" xml:space="preserve">
     <value>RestMinutesMaterialCard</value>
@@ -1258,8 +1249,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="RestTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 182</value>
   </data>
-  <data name="&gt;&gt;RestNumericUpDown.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;ColonLabel.Name" xml:space="preserve">
+    <value>ColonLabel</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
@@ -1269,6 +1260,9 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   </data>
   <data name="&gt;&gt;WorkTitleLabel.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="RestTitleLabel.Text" xml:space="preserve">
+    <value>Rest</value>
   </data>
   <data name="ColorThemeMaterialCard.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 50</value>
@@ -1324,8 +1318,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="ThemeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 19</value>
   </data>
-  <data name="WorkMinutesMaterialCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 50</value>
+  <data name="LanguageSelectionComboBox.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;LanguageTitleLabel.Name" xml:space="preserve">
     <value>LanguageTitleLabel</value>
@@ -1339,14 +1333,14 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;AboutAppMaterialCard.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="LanguageSelectionComboBox.MaxDropDownItems" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="SettingsTabPage.ImageKey" xml:space="preserve">
+    <value>settings.png</value>
   </data>
   <data name="&gt;&gt;LanguageTitleLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="DesignTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20px, style=Bold</value>
+  <data name="&gt;&gt;DescriptionAppLabel.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;LanguageSelectionComboBox.Name" xml:space="preserve">
     <value>LanguageSelectionComboBox</value>
@@ -1423,14 +1417,17 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="AboutTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 13</value>
   </data>
-  <data name="RestTitleLabel.Text" xml:space="preserve">
-    <value>Rest</value>
+  <data name="DocumentationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
   </data>
   <data name="WorkTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 19</value>
   </data>
   <data name="&gt;&gt;DesignTitleLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DarkThemeSwitch.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialSwitch, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="WorkMinutesLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1507,8 +1504,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="TimerSettingsTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20px, style=Bold</value>
   </data>
-  <data name="&gt;&gt;DesignTitleLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;DocumentationButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="GreenRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1524,6 +1521,9 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   </data>
   <data name="ColonLabel.Text" xml:space="preserve">
     <value>:</value>
+  </data>
+  <data name="&gt;&gt;DesignTitleLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="DetailedInformationButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
