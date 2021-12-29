@@ -45,6 +45,9 @@ namespace TimerPomodoro
 
             LanguageSelectionComboBox.DisplayMember = "NativeName";
             LanguageSelectionComboBox.ValueMember = "Name";
+
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
+                LanguageSelectionComboBox.SelectedValue = Properties.Settings.Default.Language;
         }
         #endregion
 
