@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;StopButton.Parent" xml:space="preserve">
-    <value>HomeTabPage</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="DesignTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 24</value>
@@ -156,14 +153,26 @@
   <data name="LanguageTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20px, style=Bold</value>
   </data>
+  <data name="&gt;&gt;DescriptionAppLabel.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="RestNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="DarkThemeMaterialCard.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
   </data>
   <data name="RestMinutesLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14px</value>
   </data>
+  <data name="&gt;&gt;AboutAppMaterialCard.Parent" xml:space="preserve">
+    <value>AboutTabPage</value>
+  </data>
   <data name="&gt;&gt;ColonLabel.Parent" xml:space="preserve">
     <value>HomeTabPage</value>
+  </data>
+  <data name="&gt;&gt;LanguageTitleLabel.Name" xml:space="preserve">
+    <value>LanguageTitleLabel</value>
   </data>
   <data name="&gt;&gt;SecondsLabel.Name" xml:space="preserve">
     <value>SecondsLabel</value>
@@ -177,13 +186,13 @@
   <data name="BlueRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="InformationTitleLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;GreenRadioButton.Name" xml:space="preserve">
     <value>GreenRadioButton</value>
   </data>
   <data name="&gt;&gt;WorkNumericUpDown.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ColonLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="MinutesLabel.Text" xml:space="preserve">
@@ -215,9 +224,6 @@
   </data>
   <data name="EmailDeveloperButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;DelimiterPanel.Name" xml:space="preserve">
-    <value>DelimiterPanel</value>
   </data>
   <data name="&gt;&gt;RestMinutesLabel.Name" xml:space="preserve">
     <value>RestMinutesLabel</value>
@@ -261,6 +267,9 @@
   <data name="&gt;&gt;ColorThemeMaterialCard.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="&gt;&gt;DarkThemeMaterialCard.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>525, 1</value>
   </data>
@@ -273,11 +282,17 @@
   <data name="&gt;&gt;DetailedInformationButton.Parent" xml:space="preserve">
     <value>AboutAppMaterialCard</value>
   </data>
+  <data name="&gt;&gt;OrangeRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="BlueRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="SettingsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;DetailedInformationButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="GreenRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -290,12 +305,6 @@
   </data>
   <data name="&gt;&gt;AboutTitleLabel.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>SettingsTabPage</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 270</value>
   </data>
   <data name="&gt;&gt;DescriptionAppLabel.Name" xml:space="preserve">
     <value>DescriptionAppLabel</value>
@@ -369,11 +378,8 @@
   <data name="&gt;&gt;RestTitleLabel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="SettingsTabPage.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="&gt;&gt;SecondsLabel.Parent" xml:space="preserve">
-    <value>HomeTabPage</value>
+  <data name="WorkTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 19</value>
   </data>
   <data name="&gt;&gt;BlueRadioButton.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -381,14 +387,11 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="&gt;&gt;ColorThemeMaterialCard.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="WorkMinutesMaterialCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 203</value>
   </data>
   <data name="&gt;&gt;OrangeRadioButton.Parent" xml:space="preserve">
     <value>ColorThemeMaterialCard</value>
-  </data>
-  <data name="RestNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 13</value>
   </data>
   <data name="DelimiterPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 136</value>
@@ -420,9 +423,6 @@
   <data name="&gt;&gt;ColorThemeLabel.Name" xml:space="preserve">
     <value>ColorThemeLabel</value>
   </data>
-  <data name="DesignTitleLabel.Text" xml:space="preserve">
-    <value>Application design</value>
-  </data>
   <data name="&gt;&gt;GitHubProfileButton.Parent" xml:space="preserve">
     <value>InformationMaterialCard</value>
   </data>
@@ -438,14 +438,14 @@
   <data name="AboutTabPage.Text" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="DocumentationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
   <data name="SecondsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="InformationTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14px</value>
-  </data>
-  <data name="PurpleRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="PurpleRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 37</value>
@@ -474,6 +474,9 @@
   <data name="WorkTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14px</value>
   </data>
+  <data name="&gt;&gt;ColorThemeMaterialCard.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;RestNumericUpDown.Name" xml:space="preserve">
     <value>RestNumericUpDown</value>
   </data>
@@ -486,20 +489,23 @@
   <data name="LanguageTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 284</value>
   </data>
+  <data name="DetailedInformationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 36</value>
+  </data>
   <data name="LanguageTitleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="DarkThemeSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
+  <data name="EmailDeveloperButton.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
   <data name="&gt;&gt;LanguageTitleLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="MinutesLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 96px</value>
-  </data>
-  <data name="ColorThemeMaterialCard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
   </data>
   <data name="&gt;&gt;WorkTitleLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
@@ -513,6 +519,9 @@
   <data name="&gt;&gt;ColorThemeMaterialCard.Name" xml:space="preserve">
     <value>ColorThemeMaterialCard</value>
   </data>
+  <data name="HomeTabPage.ImageKey" xml:space="preserve">
+    <value>home.png</value>
+  </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
@@ -522,8 +531,8 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;HomeTabPage.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;StopButton.Parent" xml:space="preserve">
+    <value>HomeTabPage</value>
   </data>
   <data name="&gt;&gt;DelimiterPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -585,12 +594,15 @@
   <data name="OrangeRadioButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;InformationMaterialCard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="SideMenuImageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACs
-        FgAAAk1TRnQBSQFMAgEBAwEAAfABAAEYAQEBIAEAASABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAGA
+        FgAAAk1TRnQBSQFMAgEBAwEAAfABAAEcAQEBIAEAASABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAGA
         AwABIAMAAQEBAAEgBgABQLoAAwkBDAM1AVYDTgGYA1sByANYAekDPQH5Az0B+QNYAekDWwHIA04BlwM0
         AVUDCAELWAADBAEFA0gBhgNeAeUDAAH/AwAB/wNeAeUDSAGFAwQBBbwAAwMBBAMoAT0DLAFEAywBRAMs
         AUQDLAFEAywBRAMsAUQDLAFEAykBPgMEAQYQAAMEAQYDKQE+AywBRAMsAUQDLAFEAywBRAMsAUQDLAFE
@@ -692,8 +704,8 @@
   <data name="&gt;&gt;RestTitleLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="HomeTabPage.ImageKey" xml:space="preserve">
-    <value>home.png</value>
+  <data name="&gt;&gt;MinutesLabel.Name" xml:space="preserve">
+    <value>MinutesLabel</value>
   </data>
   <data name="RestMinutesLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -721,6 +733,9 @@
   </data>
   <data name="StopButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 36</value>
+  </data>
+  <data name="ThemeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 47</value>
   </data>
   <data name="&gt;&gt;EmailDeveloperButton.Parent" xml:space="preserve">
     <value>InformationMaterialCard</value>
@@ -1028,9 +1043,6 @@
   <data name="ColorThemeMaterialCard.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="ColorThemeMaterialCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 70</value>
-  </data>
   <data name="WorkMinutesMaterialCard.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>14, 14, 14, 14</value>
   </data>
@@ -1063,6 +1075,9 @@
   </data>
   <data name="&gt;&gt;LanguageSelectionComboBox.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="InformationMaterialCard.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="DesignTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
@@ -1105,17 +1120,17 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="DetailedInformationButton.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;InformationTitleLabel.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="LanguageSelectionComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="GitHubProfileButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
   </data>
   <data name="&gt;&gt;WorkMinutesMaterialCard.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="&gt;&gt;AboutTabPage.Parent" xml:space="preserve">
     <value>SideMenuTabControl</value>
+  </data>
+  <data name="AboutAppMaterialCard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
   </data>
   <data name="&gt;&gt;WorkMinutesLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1153,9 +1168,6 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="DetailedInformationButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 120</value>
   </data>
-  <data name="&gt;&gt;RestNumericUpDown.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;ThemeLabel.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
@@ -1168,26 +1180,20 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="AboutTabPage.ImageKey" xml:space="preserve">
     <value>info.png</value>
   </data>
+  <data name="&gt;&gt;ColonLabel.Name" xml:space="preserve">
+    <value>ColonLabel</value>
+  </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="&gt;&gt;DesignTitleLabel.Name" xml:space="preserve">
     <value>DesignTitleLabel</value>
   </data>
-  <data name="&gt;&gt;TimerSettingsTitleLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <data name="&gt;&gt;OrangeRadioButton.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="DesignTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20px, style=Bold</value>
-  </data>
   <data name="&gt;&gt;RestNumericUpDown.Parent" xml:space="preserve">
     <value>RestMinutesMaterialCard</value>
-  </data>
-  <data name="DocumentationButton.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
   </data>
   <data name="&gt;&gt;OrangeRadioButton.Name" xml:space="preserve">
     <value>OrangeRadioButton</value>
@@ -1249,8 +1255,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="RestTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 182</value>
   </data>
-  <data name="&gt;&gt;ColonLabel.Name" xml:space="preserve">
-    <value>ColonLabel</value>
+  <data name="&gt;&gt;RestNumericUpDown.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
@@ -1258,20 +1264,14 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;EmailDeveloperButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;WorkTitleLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="RestTitleLabel.Text" xml:space="preserve">
-    <value>Rest</value>
-  </data>
   <data name="ColorThemeMaterialCard.Size" type="System.Drawing.Size, System.Drawing">
     <value>323, 50</value>
   </data>
-  <data name="WorkMinutesMaterialCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 203</value>
+  <data name="ThemeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
   </data>
-  <data name="&gt;&gt;AboutAppMaterialCard.Parent" xml:space="preserve">
-    <value>AboutTabPage</value>
+  <data name="LanguageSelectionComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="GreenRadioButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 6</value>
@@ -1285,17 +1285,20 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="WorkTitleLabel.Text" xml:space="preserve">
     <value>Work</value>
   </data>
+  <data name="&gt;&gt;HomeTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;DelimiterPanel.Parent" xml:space="preserve">
     <value>SettingsTabPage</value>
+  </data>
+  <data name="&gt;&gt;DocumentationButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="LanguageTitleLabel.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
   <data name="ColonLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;MinutesLabel.Name" xml:space="preserve">
-    <value>MinutesLabel</value>
   </data>
   <data name="RestMinutesLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1309,26 +1312,26 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;ThemeLabel.Parent" xml:space="preserve">
     <value>SettingsTabPage</value>
   </data>
-  <data name="ThemeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 47</value>
+  <data name="&gt;&gt;SecondsLabel.Parent" xml:space="preserve">
+    <value>HomeTabPage</value>
   </data>
   <data name="ColorThemeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 19</value>
   </data>
-  <data name="ThemeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
+  <data name="EmailDeveloperButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 36</value>
   </data>
   <data name="LanguageSelectionComboBox.MaxDropDownItems" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;LanguageTitleLabel.Name" xml:space="preserve">
-    <value>LanguageTitleLabel</value>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>SettingsTabPage</value>
   </data>
   <data name="DarkThemeSwitch.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 37</value>
   </data>
-  <data name="&gt;&gt;ColonLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;WorkTitleLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;AboutAppMaterialCard.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1339,8 +1342,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;LanguageTitleLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;DescriptionAppLabel.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="DesignTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20px, style=Bold</value>
   </data>
   <data name="&gt;&gt;LanguageSelectionComboBox.Name" xml:space="preserve">
     <value>LanguageSelectionComboBox</value>
@@ -1396,6 +1399,9 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="MinutesLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;RestMinutesLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;StopButton.Name" xml:space="preserve">
     <value>StopButton</value>
   </data>
@@ -1417,11 +1423,11 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="AboutTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 13</value>
   </data>
-  <data name="DocumentationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+  <data name="DesignTitleLabel.Text" xml:space="preserve">
+    <value>Application design</value>
   </data>
-  <data name="WorkTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 19</value>
+  <data name="DocumentationButton.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="&gt;&gt;DesignTitleLabel.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1438,17 +1444,17 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="DarkThemeSwitch.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 6</value>
   </data>
-  <data name="DarkThemeMaterialCard.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
+  <data name="ColorThemeMaterialCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 70</value>
   </data>
   <data name="AboutTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 19</value>
   </data>
-  <data name="&gt;&gt;OrangeRadioButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;DelimiterPanel.Name" xml:space="preserve">
+    <value>DelimiterPanel</value>
   </data>
-  <data name="EmailDeveloperButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 36</value>
+  <data name="&gt;&gt;TimerSettingsTitleLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;PurpleRadioButton.Parent" xml:space="preserve">
     <value>ColorThemeMaterialCard</value>
@@ -1474,8 +1480,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="TimerSettingsTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 24</value>
   </data>
-  <data name="&gt;&gt;RestMinutesLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="SettingsTabPage.Text" xml:space="preserve">
+    <value>Settings</value>
   </data>
   <data name="AboutAppMaterialCard.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>14, 14, 14, 14</value>
@@ -1486,8 +1492,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="WorkTitleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="GitHubProfileButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+  <data name="InformationTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;RestMinutesMaterialCard.Type" xml:space="preserve">
     <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1504,20 +1510,17 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="TimerSettingsTitleLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20px, style=Bold</value>
   </data>
-  <data name="&gt;&gt;DocumentationButton.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="ColorThemeMaterialCard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
   </data>
   <data name="GreenRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;DetailedInformationButton.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 270</value>
   </data>
   <data name="&gt;&gt;DocumentationButton.Parent" xml:space="preserve">
     <value>InformationMaterialCard</value>
-  </data>
-  <data name="RestTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
   </data>
   <data name="ColonLabel.Text" xml:space="preserve">
     <value>:</value>
@@ -1543,14 +1546,11 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;ThemeLabel.Name" xml:space="preserve">
     <value>ThemeLabel</value>
   </data>
-  <data name="&gt;&gt;HomeTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;RestMinutesLabel.Parent" xml:space="preserve">
     <value>RestMinutesMaterialCard</value>
   </data>
-  <data name="&gt;&gt;DarkThemeMaterialCard.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="PurpleRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="RestMinutesMaterialCard.Location" type="System.Drawing.Point, System.Drawing">
     <value>169, 203</value>
@@ -1558,8 +1558,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="RestNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;InformationMaterialCard.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="RestNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 13</value>
   </data>
   <data name="&gt;&gt;RestNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1573,8 +1573,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="WorkNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 13</value>
   </data>
-  <data name="InformationMaterialCard.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;InformationTitleLabel.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.2.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="DelimiterPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>525, 1</value>
@@ -1582,11 +1582,11 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="DarkThemeMaterialCard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>14, 14, 14, 14</value>
   </data>
-  <data name="AboutAppMaterialCard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>14, 14, 14, 14</value>
+  <data name="RestTitleLabel.Text" xml:space="preserve">
+    <value>Rest</value>
   </data>
-  <data name="DetailedInformationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 36</value>
+  <data name="&gt;&gt;HomeTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DarkThemeMaterialCard.Name" xml:space="preserve">
     <value>DarkThemeMaterialCard</value>
@@ -1594,8 +1594,8 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;LanguageTitleLabel.Parent" xml:space="preserve">
     <value>SettingsTabPage</value>
   </data>
-  <data name="EmailDeveloperButton.Text" xml:space="preserve">
-    <value>Email</value>
+  <data name="RestTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 19</value>
   </data>
   <data name="&gt;&gt;DarkThemeMaterialCard.Parent" xml:space="preserve">
     <value>SettingsTabPage</value>
@@ -1606,9 +1606,6 @@ algorithm must be repeated four times, that is, "eat four tomatoes". And then - 
   <data name="&gt;&gt;RestMinutesMaterialCard.Parent" xml:space="preserve">
     <value>SettingsTabPage</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en-US</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

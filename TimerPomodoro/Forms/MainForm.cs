@@ -19,6 +19,9 @@ namespace TimerPomodoro
 
         public MainForm()
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+            System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+
             InitializeComponent();
 
             #region Installing the default theme
@@ -26,8 +29,24 @@ namespace TimerPomodoro
                BlueRadioButton, OrangeRadioButton);
             #endregion
 
+            SelectLanguage();
+
             minutes = Convert.ToInt32(WorkNumericUpDown.Value);
         }
+
+        #region Language selection in the application
+        private void SelectLanguage()
+        {
+            LanguageSelectionComboBox.DataSource = new System.Globalization.CultureInfo[]
+            {
+                System.Globalization.CultureInfo.GetCultureInfo("en-US"),
+                System.Globalization.CultureInfo.GetCultureInfo("ru-RU")
+            };
+
+            LanguageSelectionComboBox.DisplayMember = "NativeName";
+            LanguageSelectionComboBox.ValueMember = "Name";
+        }
+        #endregion
 
         #region Choosing a color scheme for the application
         private void ChoosingColorScheme(object sender, EventArgs e)
