@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using MaterialSkin;
 using MaterialSkin.Controls;
 using TimerPomodoro.Services;
 using TimerPomodoro.Forms;
@@ -18,14 +17,7 @@ namespace TimerPomodoro
         #endregion
 
         public MainForm()
-        {
-            #region Loading the saved language in the app
-            if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
-            {
-                System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
-                System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
-            }
-            #endregion
+        {           
 
             InitializeComponent();
 
@@ -34,28 +26,8 @@ namespace TimerPomodoro
                BlueRadioButton, OrangeRadioButton);
             #endregion
 
-            SelectLanguage();
-
             minutes = Convert.ToInt32(WorkNumericUpDown.Value);
-        }
-
-        #region Language selection in the application
-        private void SelectLanguage()
-        {
-            LanguageSelectionComboBox.DataSource = new System.Globalization.CultureInfo[]
-            {
-                System.Globalization.CultureInfo.GetCultureInfo("en-US"),
-                System.Globalization.CultureInfo.GetCultureInfo("ru-RU")
-            };
-
-            LanguageSelectionComboBox.DisplayMember = "NativeName";
-            LanguageSelectionComboBox.ValueMember = "Name";
-
-            if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
-                LanguageSelectionComboBox.SelectedValue = Properties.Settings.Default.Language;
-            
-        }
-        #endregion
+        }      
 
         #region Choosing a color scheme for the application
         private void ChoosingColorScheme(object sender, EventArgs e)
@@ -141,14 +113,6 @@ namespace TimerPomodoro
         private void DarkThemeSwitch_CheckedChanged(object sender, EventArgs e)
         {
             AppFormSettings.ChoosingDarkTheme(DarkThemeSwitch);
-        }
-        #endregion
-
-        #region Saving the selected language when closing the application
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Properties.Settings.Default.Language = LanguageSelectionComboBox.SelectedValue.ToString();
-            Properties.Settings.Default.Save();
         }
         #endregion
     }
